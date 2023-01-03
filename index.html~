@@ -4,8 +4,8 @@
     <script type="text/javascript" id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
-	<TITLE>Alexandr Shapoval's Homepage</TITLE>
-	<LINK REL="stylesheet" TYPE="text/css" HREF="style.css">
+	<title>Alexandr Shapoval's Homepage</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<META name="description" content="homepage, research, career">
 	<META name="keywords" content="sandpile, complex systems, econophysics, self organized criticality, SOC, attractors">
 	<META http-equiv=Content-Type content="text/html; charset=auto">
@@ -16,7 +16,7 @@
  <!-- File header.html -->
  <TABLE width="700" border="0" cellspacing="0" cellpadding="0">
   <TR valign="bottom">
-   <TD class="name" width="210"> <FONT color="#FF0000"> ALEXANDR SHAPOVAL </FONT> </TD>
+   <TD class="name" width="210"> <FONT color="#FF0000"> SASHA SHAPOVAL </FONT> </TD>
    <TD align="right">
 	   <IMG src="squares.jpg" border="0" width="59" height="35" hspace="3" vspace="0">
    </TD>
@@ -44,16 +44,25 @@
     <IMG src="pictureAS.jpg" align="left" hspace="1" vspace="1" border="0" style="height: 100%; width: 100%; object-fit: contain" alt="My picture">
    </TD>
    <td class="main">
-	<h2>
+	<h2 align="center">
 	  Professor of Applied Mathematics
 	  <br>
 	  University of Lodz, Poland
 	  <br>
-	  email: shapoval\(\langle @\rangle\)gmail.com
+	  email: shapoval\(@\)gmail.com
 	</h2>
    </td>
   </TR>
  </TABLE>
 </TD></TR></TABLE>
+<div style="border: 1px solid black; padding: 1%; font-size: 120%">
+  <ul>
+    <li>Sasha (Alexander) Shapoval is a professor at the University of Lodz</li>
+    <ul><li>He was born in Ukraine,</li><li>got PhD from the Lomonosov Moscow State University (Russia),</li><li>worked as a PostDoc at the International Center of Theoretical Physics (Trieste, Italy),</li><li>and defended the Habilitation thesis at the Keldysh Institute of Applied Mathematics (Russian Academy of Sciences).</li></ul>
+    <li>The area of his expertise is complex systems. In his interdisciplinary research, Sasha applies modern mathematical, computational, machine learning, and statistical tools to analyze data, construct predictions, detect anomalies, and assess scenarios of real-life processes. He has published papers in Scientific Reports, Astrophysical Journal, Physica D, Journal of Statistical Physics, Journal of Mathematical Economics, and other professional first-tier outlets.</li>
+    <li>Sasha receives the support of the academic research from the Russian Science Foundation, Economics Education and Research Consortium, and other Funds. Business oriented projects are performed in the collaboration with partners from industry.</li>
+    <li>He organized an educational program in Mathematical Engineering at the Department of Computer Science of HSE University and led it for two years.</li>
+  </ul>
+</div>
 </BODY>
 </HTML>

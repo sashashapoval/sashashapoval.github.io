@@ -13105,7 +13105,7 @@ div#notebook {
 <script>
 $( document ).ready(function(){
 
-            var cfg = {"base_numbering": 1, "nav_menu": {"height": "11.9886px", "width": "140px"}, "number_sections": true, "sideBar": true, "skip_h1_title": true, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": true, "toc_position": {"width": "120px"}, "toc_section_display": true, "toc_window_display": true};
+            var cfg = {"base_numbering": 1, "nav_menu": {"height": "11.9886px", "width": "140px"}, "number_sections": true, "sideBar": true, "skip_h1_title": true, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {"height": "calc(100% - 180px)", "left": "10px", "top": "150px", "width": "165px"}, "toc_section_display": true, "toc_window_display": false};
 
             // fire the main function with these parameters
             require(['nbextensions/toc2/toc2'], function (toc2) {
@@ -13119,8 +13119,15 @@ $( document ).ready(function(){
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
 <div style="color:brown;background-color:yellow;font-size:150%;text-align:center;">
     <br>
 </div>
@@ -13138,8 +13145,15 @@ $( document ).ready(function(){
 <div style="color:white;background-color:brown;font-size:120%;text-align:center;">
     University of Lodz
 </div>
+
+
+</div>
+
+</div>
+
 </div>
 </div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13532,9 +13546,9 @@ where $\hat{F}_n$ is the empirical distribution function</li>
   <summary><span style = "font-weight:bold; color:blue;"><u><li>Question:</u></span><br>If one still uses the quantiles from the KS distribution, how it affects the probability of the type I error (reject $H_0$ when it is correct)?
   </summary>
 
-  * The distances are smaller than they should be
-  * The rejection of $H_0$ is more rare
-  * The rule corresponds a significance level that is larger then given significance level
+  * The distances are smaller than they should be<br>
+  * The rejection of $H_0$ is more rare<br>
+  * The rule corresponds a significance level that is larger then given significance level<br>
   * The probability of the type I error is larger than expected
 </details><ul>
 <li>What is a possible improvement of the solution?</li>
@@ -13545,7 +13559,7 @@ where $\hat{F}_n$ is the empirical distribution function</li>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Improvement:-multiple-estimate-of-the-paramter">Improvement: multiple estimate of the paramter<a class="anchor-link" href="#Improvement:-multiple-estimate-of-the-paramter">&#182;</a></h3><ul>
+<h3 id="Improvement:-multiple-estimates-of-the-parameter">Improvement: multiple estimates of the parameter<a class="anchor-link" href="#Improvement:-multiple-estimates-of-the-parameter">&#182;</a></h3><ul>
 <li>Estimate model parameter many times, say $N = 1000$ or more<ul>
 <li>In the case of the unknown expected value, one can choose $N$ times half of the sample</li>
 <li>and choose the mean of this sub-sample as the estimate of the expected value</li>
@@ -13894,8 +13908,8 @@ where $n$ is the number of observations and $\Phi$ is cdf of the standard normal
   <summary><span style = "font-weight:bold; color:blue;"><u><li>Question:</u></span><br>Can you characterize the graph of $F_{\text{kernel}}(z)$ if $s$ is close to $0$? Relatively large?
   </summary>
 
-  * Close to the empirical distribution function because the summands are closing to the theta-function, quickly varying from $0$ to $1$ in a small neighborhood of the existed values $x_i$ (because $s$ is small)
-  * As $s$ increases the approximation becomes smoother because the range of the values characterizes the variation of each summand is wider
+  * Close to the empirical distribution function because the summands are closing to the theta-function, quickly varying from $0$ to $1$ in a small neighborhood of the existed values $x_i$ (because $s$ is small)<br>
+  * As $s$ increases the approximation becomes smoother because the range of the values characterizes the variation of each summand is wider<br>
   * Eventually this range becomes too wide, jumps at the observed values disappear, and the approximation is irrelevant
 </details>
 </div>
@@ -14319,6 +14333,37 @@ $$
 </div>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div style="font-size:75%;">
+
+  <span style="font-weight:bold;">Topics:</span> <br>
+
+  <li><a href="../intro/introduction.html">Introduction</a></li>
+  <li><a href="../2_bayesian/bayesian.html">Bayesian approach</a></li>
+  <li><a href="../3_prob/probabilities.html">Review of probabilities</a></li>
+  <li><a href="../4_hypotheses/hypotheses.html">Hypothesis testing</a></li>
+  <li><a href="../4_hypotheses/goodness-of-the-fit.html">Goodness-of-the-fit</a></li>
+  <li><a href="../5_bootstrap/bootstrap.html">Bootstrap</a></li>
+  <li><a href="../6_estimates/estimates.html">General concepts of parameter estimation.</a></li>
+  <li><a href="../7_regress/regres.html">Regressions</a></li>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered celltag_remove_input">
 
