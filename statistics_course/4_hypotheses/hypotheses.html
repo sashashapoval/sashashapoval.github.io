@@ -13105,7 +13105,7 @@ div#notebook {
 <script>
 $( document ).ready(function(){
 
-            var cfg = {"base_numbering": 1, "nav_menu": {"height": "11.9886px", "width": "160px"}, "number_sections": true, "sideBar": true, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {"height": "calc(100% - 180px)", "left": "10px", "top": "150px", "width": "165px"}, "toc_section_display": true, "toc_window_display": false};
+            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {"height": "calc(100% - 180px)", "left": "10px", "top": "150px", "width": "165px"}, "toc_section_display": true, "toc_window_display": false};
 
             // fire the main function with these parameters
             require(['nbextensions/toc2/toc2'], function (toc2) {
@@ -14196,20 +14196,20 @@ Although we do not accept the alternative hypothesis, this informally means that
 <h3 id="Difference-in-Population-Proportions">Difference in Population Proportions<a class="anchor-link" href="#Difference-in-Population-Proportions">&#182;</a></h3><p><strong>Research Question</strong>
 Is there a significant difference between the population proportions of parents of black children and parents of Hispanic children who report that their child has had some swimming lessons?</p>
 <p><strong>Populations:</strong> All parents of black children age 6-18 and all parents of Hispanic children age 6-18</p>
-<p><strong>Parameter of Interest:</strong> $p1 - p2$, where $p1 = $black and $p2 = $hispanic</p>
-<p><strong>Null Hypothesis:</strong> $p1 - p2 = 0$
+<p><strong>Parameter of Interest:</strong> $p1 - p2$, where $p1 = \texttt{black}$ and $p2 = \texttt{hispanic}$</p>
+<p><strong>Null Hypothesis:</strong> $p1 - p2 = 0$.
 Alternative Hypthosis: $p1 - p2 \neq 0$</p>
-<p><strong>Data:</strong> \
-247 Parents of Black Children. 36.8% of parents report that their child has had some swimming lessons.\
-308 Parents of Hispanic Children. 38.9% of parents report that their child has had some swimming lessons.</p>
+<p><strong>Data:</strong></p>
+<p>247 Parents of Black Children. 36.8% of parents report that their child has had some swimming lessons.</p>
+<p>308 Parents of Hispanic Children. 38.9% of parents report that their child has had some swimming lessons.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Use of ttest_ind() from statsmodels
-Difference in population proportion needs t-test. Also, the population follow a binomial distribution here. We can just pass on the two population quantities with the appropriate binomial distribution parameters to the t-test function.</p>
+<p>Use of <code>ttest_ind()</code> from <strong>statsmodels</strong>.</p>
+<p>Difference in population proportion needs the t-test. Also, the population follow a binomial distribution here. We can just pass on the two population quantities with the appropriate binomial distribution parameters to the t-test function.</p>
 <p>The function returns three values: (a) test statisic, (b) p-value of the t-test, and (c) degrees of freedom used in the t-test.</p>
 
 </div>
@@ -14612,6 +14612,37 @@ Probability_2_tailed =  0.014964627732624525
 </div>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div style="font-size:75%;">
+
+  <span style="font-weight:bold;">Topics:</span> <br>
+
+  <li><a href="../intro/introduction.html">Introduction</a></li>
+  <li><a href="../2_bayesian/bayesian.html">Bayesian approach</a></li>
+  <li><a href="../3_prob/probabilities.html">Review of probabilities</a></li>
+  <li><a href="../4_hypotheses/hypotheses.html">Hypothesis testing</a></li>
+  <li><a href="../4_hypotheses/goodness-of-the-fit.html">Goodness-of-the-fit</a></li>
+  <li><a href="../5_bootstrap/bootstrap.html">Bootstrap</a></li>
+  <li><a href="../6_estimates/estimates.html">General concepts of parameter estimation.</a></li>
+  <li><a href="../7_regress/regres.html">Regressions</a></li>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
