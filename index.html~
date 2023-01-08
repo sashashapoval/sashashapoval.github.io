@@ -14,7 +14,7 @@
 
 <TABLE width="100%" border="0" bgcolor="#FFFFFF"><TR><TD align="center">
  <!-- File header.html -->
- <TABLE width="700" border="0" cellspacing="0" cellpadding="0">
+ <TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
   <TR valign="bottom">
    <TD class="name" width="210"> <FONT color="#FF0000"> SASHA SHAPOVAL </FONT> </TD>
    <TD align="right">
@@ -29,8 +29,8 @@
    <TD align="center" bgcolor="red" bordercolor="black"> 
     <TABLE border="0" width="100%" cellpadding="0"><TR>
      <TD class="ref"> home </TD>
-     <TD class="ref"><a href="publctn.html">publications</a></TD>
      <TD class="ref"><a href="cv.pdf">cv</a></TD>
+     <TD class="ref"><a href="publctn.html">publications</a></TD>
      <td class="ref"><a href="#">research</a> </td>
      <td class="ref"><a href="#">teaching</a> </td>
     </TR></TABLE>
@@ -49,8 +49,17 @@
 	  <br>
 	  University of Lodz, Poland
 	  <br>
-	  email: shapoval\(@\)gmail.com
+	  email: abshapoval\(@\)gmail.com
 	</h2>
+	<div class="maininfoleft">
+  <ul>
+    <li>PhD from the Lomonosov Moscow State University (Russia), PostDoc at the International Center of Theoretical Physics (Trieste, Italy), Habilitation from the Keldysh Institute of Applied Mathematics of the Russian Academy of Sciences.</li>
+    <li>The area of his expertise is complex systems. In his interdisciplinary research, Sasha applies modern mathematical, computational, machine learning, and statistical tools to analyze data, construct predictions, detect anomalies, and assess scenarios of real-life processes. He has published papers in Scientific Reports, Astrophysical Journal, Physica D, Journal of Statistical Physics, Journal of Mathematical Economics, and other professional first-tier outlets.</li>
+    <li>ACademic research are supported by grants from the Russian Science Foundation, Economics Education and Research Consortium, and other Funds. Business oriented projects are performed in the collaboration with partners from industry.</li>
+    <li>He has organized an educational program in Mathematical Engineering at the Department of Computer Science of HSE University and led it for two years.</li>
+  </ul>
+	  Making the world better with artificial intelligence, mathematical engineering, and economic forecasting
+	</div>
    </td>
   </TR>
  </TABLE>
@@ -61,7 +70,7 @@
     <ul><li>He was born in Ukraine,</li><li>got PhD from the Lomonosov Moscow State University (Russia),</li><li>worked as a PostDoc at the International Center of Theoretical Physics (Trieste, Italy),</li><li>and defended the Habilitation thesis at the Keldysh Institute of Applied Mathematics (Russian Academy of Sciences).</li></ul>
     <li>The area of his expertise is complex systems. In his interdisciplinary research, Sasha applies modern mathematical, computational, machine learning, and statistical tools to analyze data, construct predictions, detect anomalies, and assess scenarios of real-life processes. He has published papers in Scientific Reports, Astrophysical Journal, Physica D, Journal of Statistical Physics, Journal of Mathematical Economics, and other professional first-tier outlets.</li>
     <li>Sasha receives the support of the academic research from the Russian Science Foundation, Economics Education and Research Consortium, and other Funds. Business oriented projects are performed in the collaboration with partners from industry.</li>
-    <li>He organized an educational program in Mathematical Engineering at the Department of Computer Science of HSE University and led it for two years.</li>
+    <li>He has organized an educational program in Mathematical Engineering at the Department of Computer Science of HSE University and led it for two years.</li>
   </ul>
 </div>
 </BODY>
