@@ -11,4 +11,13 @@
   <li><a href="../6_estimates/estimates.html">General concepts of parameter estimation.</a></li>
   <li><a href="../7_regress/regres.html">Regressions</a></li>
 </div>
-
+<div style="font-size:75%;">
+  Codes and data files are <a href="#">here</a>.<br>
+  You can use the same folder structre:<br>
+  <span font-weight="bold"><topic_name></span><br>
+  <span font-weight="bold"><--file.ipynb></span><br>
+  <span font-weight="bold"><lib></span><br>
+  <span font-weight="bold"><--file.py></span><br>
+  <span font-weight="bold"><style></span><br>
+  <span font-weight="bold"><--custom.css></span><br>
+</div>
