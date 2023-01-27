@@ -1,68 +1,12 @@
-<style>
-	BODY {
-		font-family : "Courier New", Courier, monospace;
-		font-size : 12px;
-		font-weight : normal;
-		text-align : justify;
-	}
-	H5 {
-		font-family : "Arial";
-		font-size : "15px";
-		font-weight : bold;
-		text-align: center;
-	}
-	td.name {
-		font-family : "Arial", "helvetica";
-		font-size : 16px;
-		font-weight : normal;
-		text-align: right;
-	}
-	td.listname {
-		font-family : "Arial", "helvetica";
-		font-size : 16px;
-		font-weight : bold;
-		text-align: right;
-	}
-	td.ref {
-		font-family : "helvetica";
-		font-size : 12px;
-		font-weight : normal;
-		font-color : "black";
-		text-align: center;
-	}
-	td.abstref {
-		font-family : "helvetica";
-		font-size : 13px;
-		font-weight : normal;
-		font-color : "black";
-		text-align: left;
-	}
-	td.main {
-		font-family : "Arial";
-		font-size : 12px;
-		font-weight : normal;
-		text-align: justify;
-	}
-	LI.main {
-		font-family : "Arial";
-		font-size : 13px;
-		font-weight : normal;
-		text-align: left;
-	}
-	UL.main {
-		font-family : "Arial";
-		font-size : 13px;
-		font-weight : normal;
-		text-align: left;
-	}
-	OL.main {
-		font-family : "Arial";
-		font-size : 13px;
-		font-weight : normal;
-		text-align: left;
-	}
-	.maininfocenter {
-	  	font-size: 120%;
-		text-align: center;
-	}
-</style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 0px;
+  bottom: 0;
+  height: inherit;
+}
+.w3-bar {
+  width: 80%;
+  margin-left: 20%;
+}
