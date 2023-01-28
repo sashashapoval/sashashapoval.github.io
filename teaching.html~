@@ -21,10 +21,10 @@
 <div class="w3-top">
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+    <a href="./index.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
     <a href="./bio.html" class="w3-bar-item w3-button w3-theme-l1">Bio</a>
-    <a href="./cv.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CV</a>
-    <a href="./teaching.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Teaching</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CV</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Research</a>
     <a href="./publications.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Publications</a>
   </div>
 </div>
@@ -58,14 +58,41 @@
       </div>
   </div>
 
+  <!-- Content itself. Files have to share the above lines -->
   <div class="w3-row w3-padding-top-minus36 w3-margin-left">
     <div class="w3-container">
-      <h1 class="w3-text-teal">Sasha Shapoval in brief</h1>
-	  <ul class="w3-xlarge">
-	    <li>Applied Mathematician</li>
-	    <li>Expertise in Complex Systems, Statistical Physics, Mathematical Economics</li>
-	    <li>Industry projects related to forecasting, optimization, and causal inferrence</li>
-	  </ul>
+      <h1 class="w3-text-teal">Sasha Shapoval: Teaching</h1>
+
+    <div class="w3-container">
+      <h2 class="w3-text-khaki">Statistics at New Economic School</h2>
+      <ul class="w3-large">
+	<li>Practical course with theoretical materials, excercises, and required codes in Python is available <a href="https://sashashapoval.github.io/statistics_course/intro/introduction.html">here</a>
+        </li>
+      </ul>
+      <h2 class="w3-text-khaki">Courses in computer science</h2>
+      <ul class="w3-large">
+	<li>
+	  Application serves, Software Engineering, Python, Data Analysis
+        </li>
+      </ul>
+      <h2 class="w3-text-khaki">Courses in mathematics</h2>
+      <ul class="w3-large">
+	<li>
+	  Calculus, Linear Algebra, Differential Equations, Probability and Statistics
+        </li>
+      </ul>
+      <h2 class="w3-text-khaki">Courses in economics</h2>
+      <ul class="w3-large">
+	<li>
+	  Microeconomics, Financial Mathematics
+        </li>
+      </ul>
+      <h2 class="w3-text-khaki">Mini-courses at summer schools</h2>
+      <ul class="w3-large">
+	<li>
+	  Designed courses for school studnets who major in mathematics
+        </li>
+      </ul>
     </div>
 
   <footer id="myFooter">
