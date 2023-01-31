@@ -62,24 +62,13 @@
     <div class="w3-container">
       <h1 class="w3-text-teal">Sasha Shapoval: Short bio</h1>
 	  <ul class="w3-large">
+	    <li> Born in Kyiv, Ukraine </li>
 	    <li>PhD from the Lomonosov Moscow State University (Russia), PostDoc at the International Center of Theoretical Physics (Trieste, Italy), Habilitation from the Keldysh Institute of Applied Mathematics of the Russian Academy of Sciences.</li>
-	    <li>The area of his expertise is complex systems. In his interdisciplinary research, Sasha applies modern mathematical, computational, machine learning, and statistical tools to analyze data, construct predictions, detect anomalies, and assess scenarios of real-life processes. He has published papers in Scientific Reports, Astrophysical Journal, Physica D, Journal of Statistical Physics, Journal of Mathematical Economics, and other professional first-tier outlets.</li>
+	    <li>The area of expertise is complex systems. In interdisciplinary research, Sasha applies modern mathematical, computational, machine learning, and statistical tools to analyze data, construct predictions, detect anomalies, and assess scenarios of real-life processes. He has published papers in Scientific Reports, Astrophysical Journal, Physica D, Journal of Statistical Physics, Journal of Mathematical Economics, and other professional first-tier outlets.</li>
 	    <li>Academic research is supported by grants from the Russian Science Foundation, Economics Education and Research Consortium, and other Funds. Business oriented projects are performed in the collaboration with partners from industry.</li>
 	    <li>Research management includes the creation and leadership of an educational program in Mathematical Engineering at the Department of Computer Science of HSE University.</li>
 	  </ul>
     </div>
-
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a class="w3-button w3-black" href="#">1</a>
-      <a class="w3-button w3-hover-black" href="#">2</a>
-      <a class="w3-button w3-hover-black" href="#">3</a>
-      <a class="w3-button w3-hover-black" href="#">4</a>
-      <a class="w3-button w3-hover-black" href="#">5</a>
-      <a class="w3-button w3-hover-black" href="#">»</a>
-    </div>
-  </div>
 
   <footer id="myFooter">
     <div class="w3-container w3-theme-l2 w3-padding-32">
