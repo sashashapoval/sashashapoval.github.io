@@ -38,11 +38,6 @@
   
   <h4 class="w3-bar-item"><b>Position</b></h4>
   <p style="padding-left:16px;">Professor of Applied Mathematics at the University of Lodz</p>
-  <h4 class="w3-bar-item"><b>Languages</b></h4>
-  <ul w3-theme-l2>
-    <li>Russian (native)</li>
-    <li>English (fluent)</li>
-  </ul>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -61,10 +56,12 @@
   <div class="w3-row w3-padding-top-minus36 w3-margin-left">
     <div class="w3-container">
       <h1 class="w3-text-teal">Sasha Shapoval in brief</h1>
-	  <ul class="w3-xlarge">
-	    <li>Applied Mathematician</li>
-	    <li>Expertise in Complex Systems, Statistical Physics, Mathematical Economics</li>
-	    <li>Industry projects related to forecasts, optimization, and causal inferrence</li>
+	  <ul class="w3-large">
+	    <li><b>Applied Mathematician: </b>academic track at centers of excellence with expertise in Complex Systems, Statistical Physics, Mathematical Economics, &gt; 50 papers in the first-tier peer-reviewed journals in the fields, and former students at f.e. Harvard, LSE, Gran Sasso Science Institute</li>
+	    <li><b>Project leader: </b>performing academic research and industry projects, funded from, e.g., Russian Science Foundation, Global Development Network, and ExactPro, I build the teams, design prototypes, distribute tasks, manage project requirements, and provide the risk management</li>
+	    <li><b>Expertise in programming: </b>C, Python, MatLab, Django</li>
+	    <li><b>Expertise in numerical tools: </b>forecasting, time series analysis, hypothesis testing, classification, optimization, regression analysis, and detection of causal inference with machine learning, AI, and statistical tools that include NumPy, SciPy, Pandas, Scikit-learn, Matplotlib, and Plotly</li>
+	    <li><b>Creation and management of educational programs in IT and math: </b>hundreds of graduates, collaboration with companies; responsibility for the list of courses, their curriculum, the choice of lecturers, and the coordination between them</li>
 	  </ul>
     </div>
 
