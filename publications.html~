@@ -63,6 +63,10 @@
 	  <a href="https://doi.org/10.1103/PhysRevE.110.014106" class="url" ><span class="latt-1200">https://doi.org/10.1103/PhysRevE.110.014106</span></a>
 	</li>
 	<li class="enumerate" id="x1-3x1">
+	  <p class="noindent" >A.&#x00A0;Savostianov, A.&#x00A0;Shapoval, M.&#x00A0;Shnirman, Impact of coupling on the road to synchronization of two coupled Van der Pol oscillators,  <span class="lati-1200">Physica D: Nonlinear Phenomena</span>, V.&#x00A0;463, 134166, 2024,
+	  <a href="https://doi.org/10.1016/j.physd.2024.134166" class="url" ><span class="latt-1200">https://doi.org/10.1016/j.physd.2024.134166</span></a>
+	</li>
+	<li class="enumerate" id="x1-3x1">
 	  <p class="noindent" >M.&#x00A0;Elaeva, E.&#x00A0;Blanter, M.&#x00A0;Shnirman, A.&#x00A0;Shapoval, Asymmetry in the Kuramoto model with nonidentical coupling,  <span class="lati-1200">Physical Review E</span>, V.&#x00A0;107, 064201, 2023,
 	  <a href="https://doi.org/10.1103/PhysRevE.107.064201" class="url" ><span class="latt-1200">https://doi.org/10.1103/PhysRevE.107.064201</span></a>
 	</li>
@@ -393,6 +397,12 @@ class="lati-1200">International J. Modern Physics C</span>, V.&#x00A0;16, &#x211
       Avalanches in Sand-Pile, <span 
 class="lati-1200">International J. Modern Physics C</span>, V.&#x00A0;16,
       &#x2116;&#x00A0;2, 2005, 341&#8211;348.
+      </li>
+<li 
+  class="enumerate" id="x1-75x37">
+      <!--l. 163--><p class="noindent" >A.&#x00A0;B.&#x00A0;Shapoval,  M.&#x00A0;G.&#x00A0;Shnirman,  Strong  Events  in  the  Sand-Pile
+      Model, <span 
+class="lati-1200">International J. Modern Physics C</span>, V.&#x00A0;15, &#x2116;&#x00A0;2, 2004, 279&#8211;288.
       </li>
       </ol>
     </div>
