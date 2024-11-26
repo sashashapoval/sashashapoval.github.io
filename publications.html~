@@ -59,6 +59,14 @@
       <h1 class="w3-text-teal">List of Publications</h1>
       <ol  class="enumerate1 w3-large" >
 	<li class="enumerate" id="x1-3x1">
+	  <p class="noindent" >D.&#x00A0;Sapozhnikov, A.&#x00A0;Shapoval, M.&#x00A0;Shnirman, Comparing Prediction Efficiency in the BTW and Manna Sandpiles,  <span class="lati-1200">Scientific Reports</span>, V.&#x00A0;14, 29529, 2024,
+	  <a href="https://doi.org/10.1103/PhysRevE.110.014106" class="url" ><span class="latt-1200">https://doi.org/10.1103/PhysRevE.110.054203</span></a>
+	</li>
+	<li class="enumerate" id="x1-3x1">
+	  <p class="noindent" >B.&#x00A0;Tadic, A.&#x00A0;Shapoval, M.&#x00A0;Shnirman, Signatures of self-organized dynamics in rapidly driven critical sandpiles,  <span class="lati-1200">Physical Review E</span>, V.&#x00A0;110, 054203, 2024,
+	  <a href="https://doi.org/10.1103/PhysRevE.110.014106" class="url" ><span class="latt-1200">https://doi.org/10.1103/PhysRevE.110.054203</span></a>
+	</li>
+	<li class="enumerate" id="x1-3x1">
 	  <p class="noindent" >A.&#x00A0;Shapoval, M.&#x00A0;Shnirman, Explanation of flicker noise with the Bak-Tang-Wiesenfeld model of self-organized criticality,  <span class="lati-1200">Physical Review E</span>, V.&#x00A0;110, 014106, 2024,
 	  <a href="https://doi.org/10.1103/PhysRevE.110.014106" class="url" ><span class="latt-1200">https://doi.org/10.1103/PhysRevE.110.014106</span></a>
 	</li>
