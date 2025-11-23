@@ -1,4 +1,6 @@
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Georgia", serif;}
+html,body,h1,h2,h3,h4,h5,h6,div {
+  font-family: "Garamond", serif;
+}
 .w3-sidebar {
   z-index: 3;
   width: 20%;
@@ -10,3 +12,28 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Georgia", serif;}
   width: 80%;
   margin-left: 20%;
 }
+
+/* Target the parent UL element */
+.my-list {
+    font-size: 120% !important; 
+}
+
+.my-list li {
+  line-height: 1.30;
+  margin-bottom: 1mm;
+}
+
+.w3-large a.url {
+  font-size: 80% !important; /* Use !important only if necessary to beat W3.CSS */
+}
+
+.course-heading {
+    /* Set a small margin-bottom value, e.g., 4 pixels */
+    margin-bottom: 4px; 
+}
+
+.w3-container ul.w3-large {
+    /* Set margin-top to zero to minimize the gap */
+    margin-top: 0;
+}
+

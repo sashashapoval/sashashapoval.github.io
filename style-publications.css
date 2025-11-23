@@ -1,0 +1,24 @@
+/* Reset the counter on the container, not the list */
+.w3-container {
+  counter-reset: pubs-counter; 
+}
+
+/* Remove default list numbering */
+ol.enumerate1 {
+  list-style-type: none;
+}
+
+/* Create custom number */
+ol.enumerate1 li {
+  counter-increment: pubs-counter;
+  position: relative;
+}
+
+/* Display the number */
+ol.enumerate1 li::before {
+  content: counter(pubs-counter) ". ";
+  position: absolute;
+  left: -1.5em; /* Adjust this value to align with your layout */
+  font-weight: bold; /* Optional */
+}
+

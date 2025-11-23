@@ -13,34 +13,18 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Home</a>
-    <a href="./bio.html" class="w3-bar-item w3-button w3-theme-l1">Bio</a>
-    <a href="./cv.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CV</a>
-    <a href="./teaching.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Teaching</a>
-    <a href="./publications.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Publications</a>
-  </div>
-</div>
+<!-- Navbar at the top -->
+<div id="navbar-placeholder"></div><!-- rendered by js code below -->
 
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar" style="width:20%;">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div><img src="pictureAS.jpg" style="width:210px; height:auto; padding:1px 10px 10px 10px;"></div>
-  
-  <h4 class="w3-bar-item"><b>Position</b></h4>
-  <p style="padding-left:16px;">Professor of Applied Mathematics at the University of Lodz, Poland</p>
+  <div id="sidebar-placeholder"></div>
 </nav>
 
-<!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- Main content: shift it to the right by 20% of the width when the sidebar is visible -->
@@ -55,18 +39,39 @@
 
   <div class="w3-row w3-padding-top-minus36 w3-margin-left">
     <div class="w3-container">
-      <h1 class="w3-text-teal">Sasha Shapoval, Prof. Dr.</h1>
-	  <ul class="w3-large">
-	    <li><b>Applied mathematician: </b>academic path at centers of excellence with expertise in Complex Systems, Statistical Physics, Mathematical Economics, &gt; 50 papers in the first-tier peer-reviewed journals such as Scientific Reports, Physical Review, Chaos, Astrophysical Journal, Journal of Mathematical Economics, and former students at f.e. Harvard, LSE, Gran Sasso Science Institute</li>
-	    <li><b>Project leader: </b>performing academic research and industry projects, funded from, e.g., Russian Science Foundation, Global Development Network, and ExactPro, I build the teams, design prototypes, distribute tasks, manage project requirements, and provide the risk management</li>
-	    <li><b>Expertise in programming: </b>C, Python, MatLab, Django</li>
-	    <li><b>Expertise in numerical tools: </b>forecasting, time series analysis, hypothesis testing, classification, optimization, regression analysis, and detection of causal inference with machine learning, AI, and statistical tools that include NumPy, SciPy, Pandas, Scikit-learn, Matplotlib, and Plotly</li>
-	    <li><b>Creation and management of educational programs in IT and math: </b>hundreds of graduates, collaboration with companies; responsibility for the list of courses, their curriculum, the choice of lecturers, and the coordination between them</li>
+      <h1 class="w3-text-teal" style="font-size: 2.0em;">Sasha Shapoval, Prof. Dr. | Quantitative Economist</h1>
+	  <ul class="w3-large my-list">
+	    <li>
+	      <b>Projects in Applied Microeconomics</b>
+	      focusing on Social Economics, Political Economy, and Computational Finance: By addressing heterogeneity in economic systems, I uncover their structural properties, predictability, and controllability.
+	      My analysis draws on Game Theory, General Equilibrium Theory, Big Data Analysis, and Statistical Learning.
+	    </li>
+	    <li>
+	      <b>Interdisciplinary Research Profile:</b>
+	      Strong background in Applied Mathematics and Data Science, with expertise in modeling, computational methods, and machine learning.
+	    </li>
+	    <li>
+	      <b>Publications:</b>
+	      Bridging Quantitative Economics (with papers in <i>Journal of Economics</i>, <i>Journal of Mathematical Economics</i>, <i>Journal of Public Economic Theory</i>) with Complex Systems (<i>Scientific Reports</i>, <i>Networks and Spatial Economics</i>, <i>Physical Review</i>). 
+	    </li>
+	    <li>
+	      <b>Research Leadership (PI):</b>
+	      Headed the Laboratory in Complex Systems, supported by grants and contracts from research foundations and industry partners, and served as a deputy-head of a department for research
+	    </li>
+	    <li>
+	      <b>Program Leadership:</b>
+	      Director-level experience in the creation and management
+	      of educational programs.
+	    </li>
+	    <li>
+	      <b>Advanced Computational & Econometric Expertise:</b>
+	      Proficiency in Python (NumPy, SciPy, Pandas, Scikit-learn, Matplotlib/Plotly), MatLab, and C applied to Advanced Econometrics (ML/AI), Time Series Analysis, and Forecasting.
+	    </li>
 	  </ul>
     </div>
 
   <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
+    <div class="w3-container w3-theme-l2 w3-padding-4">
       <p>email: abshapoval\(@\)gmail.com</p>
     </div>
 
@@ -101,6 +106,31 @@ function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
 }
+
+// Load top navigation bar
+function loadNavbar() {
+    fetch('navbartop.html') // Path to your navigation file
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+}
+
+// Load sidebar content
+function loadSidebar() {
+    fetch('sidebarcontent.html') // Path to your new sidebar content file
+        .then(response => response.text())
+        .then(data => {
+            // Insert the loaded content into the 'sidebar-placeholder' div
+            document.getElementById('sidebar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading sidebar:', error));
+}
+
+loadNavbar(); // Call the function to load the top navigation
+loadSidebar(); // Call the function to load the sidebar content
+
 </script>
 
 </body>

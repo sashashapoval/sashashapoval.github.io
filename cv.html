@@ -17,17 +17,8 @@
 </head>
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="./index.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
-    <a href="./bio.html" class="w3-bar-item w3-button w3-theme-l1">Bio</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CV</a>
-    <a href="./teaching.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Teaching</a>
-    <a href="./publications.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Publications</a>
-  </div>
-</div>
+<!-- Navbar at the top -->
+<div id="navbar-placeholder"></div><!-- rendered by js code below -->
 
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar" style="width:20%;">
@@ -65,49 +56,74 @@
   <div class="w3-row w3-padding-top-minus36 w3-margin-left">
     <div class="w3-container">
       <h1 class="w3-text-teal">Sasha Shapoval: CV</h1>
-      <h2 class="w3-text-khaki">Relevant skills</h2>
-	  <ul class="w3-large">
-	    <li><span class="w3-bold">Application of numerical tools</span>
+
+    <div class="w3-container">
+      <h2 class="w3-text-khaki">Employment History</h2>
+      <ul class="w3-large">
+        <li><span class="w3-bold">Professor of Applied Mathematics</span> at the University of Lodz, Poland
+	  <br><span class="w3-medium w3-text-blue-grey"><i>11/2021 - present<span style="margin-left:15px;">Achievements / Tasks</i></span></span>
+          <ul class="w3-large">
+	    <li>Teaching of industry-oriented courses in data science and economics</li>
+	    <li>Leading data-driven student projects</li>
+	    <li>Research in statistical physics: prediction of extremes, self-organized criticality</li>
+	    <li>Research in applied microeconomics: social inequality, meritocracy</li>
+          </ul>
+        </li>
+        <li><span class="w3-bold">Visiting Professor of Applied Mathematics</span> at the University of Nova Gorica, Slovenia
+	  <br><span class="w3-medium w3-text-blue-grey"><i>02/2021 - 07/2021<span style="margin-left:15px;">Achievements / Tasks</i></span></span>
+          <ul class="w3-large">
+	    <li>Teaching of applied statistics, econometrics, and basic computing</li>
+	    <li>Research on forecasting extremes in time series including coding and statistical evaluation of forecasts</li>
+          </ul>
+        </li>
+        <li><span class="w3-bold">Professor of Applied Mathematics</span> at the Department of the Computer Science of HSE University
+	  <br><span class="w3-medium w3-text-blue-grey"><i>09/2014 - 11/2021<span style="margin-left:15px;">Achievements / Tasks</i></span></span>
+          <ul class="w3-large">
+	    <li>Head of the Lab of Modeling and Control of Complex Systems with the leadership of projects:
 	      <ul class="w3-large">
-		<li>Computer coding: C, Python, MatLab</li>
-		<li>Expertise in machine learning and statistical methods such as forecasting, time series analysis, hypothesis testing, classification, clustering or regression analysis, detection of causalities</li>
+		<li><b>Synchronization of components of solar magnetic field</b>: processing and forecasting time series</li>
+		<li><b>Efficiency of political elites</b>: creation of a mathematical model, coding of optimization algorithms, and analysis of their efficiency</li>
+		<li><b>Optimal credit amount advertised to clients: the improvement of `brutal' optimization</b></li>
 	      </ul>
+	    <li>Head of the specialization "Mathematical Engineering" within the educational program "Applied Mathematics and Information Science"
 	    </li>
-	    <li><span class="w3-bold">Research project management with the responsibility for</span>
-	      <ul class="w3-large">
-		<li>the output of the data science teams</li>
-		<li>the choice of mathematical models and numerical methods elaborated by the team of scientists</li>
-		<li>interpretation of data analysis and forecasting</li>
-	      </ul>
 	    </li>
-	    <li><span class="w3-bold">Performance of independent research, ORCID: <a href=https://orcid.org/0000-0001-5340-1930>0000-0001-5340-1930</a></span>
-	      <ul class="w3-large">
-		<li>Publications in first-tier peer-reviewed journals in the fields including Scientific Reports, Physical Review E, Astrophysical Journal, Physica D, Journal of Statistical Physics, Chaos, Journal of Mathematical Economics</li>
-		<li>Principal investigator in academic grants and industry-oriented contracts obtained from, e.g., Russian Science Foundation, HSE University, Economics Education and Research Consortium, ExactPro</li>
-		<li>Runner-up in the Building synthetic data-sets challenge of SWIFT Hackathon 2021 as an expert of the ExactPro team</li>
-	      </ul>
-	    </li>
-	    <li><span class="w3-bold">Academic program development and management</span>
-	      <ul class="w3-large">
-		<li>BSc program "Data Science and Business Analytics" that was launched in Moscow by HSE University in collaboration with the London School of Economics, 2018--2022 (award from HSE University, 2019)</li>
-		<li>Head of the Specialization in Mathematical Engineering that belongs to the Applied Mathematics and Information Science program at the Department of Computer Science of HSE University from its start in 2019 till 2021</li>
-	      </ul>
-	    </li>
-	  </ul>
+	    <li><b>Habilitation</b> in Mathematical Modeling, Numerical Methods, and Complex Systems from Russian Academy of Sciences, 2012</li>
+          </ul>
+        </li>
+        <li><span class="w3-bold">Senior Research Fellow in Economics and Statistics</span> at New Economic School, Russia
+	  <br><span class="w3-medium w3-text-blue-grey"><i>06/2013 - 12/2019<span style="margin-left:15px;">Achievements / Tasks</i></span></span>
+          <ul class="w3-large">
+	    <li>Responsibility for projects on the relationship between cultural relationship and conflicts: causal inference, theoretical modeling, and statistical estimates</li>
+          </ul>
+        </li>
+        <li><span class="w3-bold">Visiting Professor of Applied Mathematics</span> at Institute of Earth Physics of Paris, France
+	  <br><span class="w3-medium w3-text-blue-grey"><i>1--2 months per year in 2011 - 2019<span style="margin-left:15px;">Achievements / Tasks</i></span></span>
+          <ul class="w3-large">
+	    <li>Performance of the numerical component of research on the analysis of solar activity</li>
+          </ul>
+        </li>
+        <li><span class="w3-bold">Assistant / Associate Professor of Applied Mathematics, Deputy Head of the Applied Mathematics Department (2010--2014)</span> at Financial University under the Government of the Russian Federation, Russia
+	  <br><span class="w3-medium w3-text-blue-grey"><i>09/2004 - 06/2014<span style="margin-left:15px;">Achievements / Tasks</i></span></span>
+          <ul class="w3-large">
+	    <li>Teaching, research, and management related to the development of the department in scientific projects and cooperation with industry</li>
+          </ul>
+        </li>
+      </ul>
     </div>
 
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
+      <!-- <a class="w3-button w3-hover-black" href="./cv.html">&#171</a> -->
       <a class="w3-button w3-black" href="#">1</a>
       <a class="w3-button w3-hover-black" href="./cv2.html">2</a>
-      <a class="w3-button w3-hover-black" href="./cv3.html">3</a>
-      <a class="w3-button w3-hover-black" href="./cv3.html">Â»</a>
+      <a class="w3-button w3-hover-black" href="./cv2.html">»</a>
     </div>
   </div>
 
   <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
+    <div class="w3-container w3-theme-l2 w3-padding-4">
       <p>email: abshapoval\(@\)gmail.com</p>
     </div>
 
@@ -142,6 +158,31 @@ function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
 }
+
+// Load top navigation bar
+function loadNavbar() {
+    fetch('navbartop.html') // Path to your navigation file
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+}
+
+// Load sidebar content
+function loadSidebar() {
+    fetch('sidebarcontent.html') // Path to your new sidebar content file
+        .then(response => response.text())
+        .then(data => {
+            // Insert the loaded content into the 'sidebar-placeholder' div
+            document.getElementById('sidebar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading sidebar:', error));
+}
+
+loadNavbar(); // Call the function to load the top navigation
+loadSidebar(); // Call the function to load the sidebar content
+
 </script>
 
 </body>

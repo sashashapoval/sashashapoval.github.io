@@ -14,31 +14,17 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style-publications.css">
 <link rel="stylesheet" type="text/css" href="main.css"> 
 </head>
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="./index.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
-    <a href="./bio.html" class="w3-bar-item w3-button w3-theme-l1">Bio</a>
-    <a href="./cv.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CV</a>
-    <a href="./teaching.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Teaching</a>
-    <a href="./publications.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Publications</a>
-  </div>
-</div>
+<!-- Navbar at the top -->
+<div id="navbar-placeholder"></div><!-- rendered by js code below -->
 
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar" style="width:20%;">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div><img src="pictureAS.jpg" style="width:210px; height:auto; padding:1px 10px 10px 10px;"></div>
-  
-  <h4 class="w3-bar-item"><b>Position</b></h4>
-  <p style="padding-left:16px;">Professor of Applied Mathematics at the University of Lodz, Poland</p>
+  <div id="sidebar-placeholder"></div>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -56,17 +42,61 @@
 
   <div class="w3-row w3-padding-top-minus36 w3-margin-left">
     <div class="w3-container">
+
       <h1 class="w3-text-teal">List of Publications</h1>
+
+      <div class="w3-small w3-margin-bottom w3-text-grey">
+	    <a href="#economics" class="w3-hover-text-teal" style="text-decoration:none">Economics</a>
+	    &nbsp;/&nbsp; 
+	    <a href="#applied-math" class="w3-hover-text-teal" style="text-decoration:none">Applied Math</a>
+	    &nbsp;/&nbsp; 
+	    <a href="#in-progress" class="w3-hover-text-teal" style="text-decoration:none">In progress</a>
+      </div>
+
+      <h2 id="economics" class="w3-text-khaki">Economics</h2>
+
       <ol  class="enumerate1 w3-large" >
 	<li class="enumerate" id="x1-3x1">
-	  <p class="noindent" >A.&#x00A0;Kazmierczak, A.&#x00A0;Shapoval, S.&#x00A0;Weber, Unified Zipf-Gibrat Framework for City Formation and Growth: A Theory and Empirics behind the Core-Periphery Tiebout-Weibull Model,  <span class="lati-1200">Networks and Spatial Economics</span>, 2025,
+	  <p class="noindent" >A.&#x00A0;Ka&zacute;mierczak, A.&#x00A0;Shapoval, S.&#x00A0;Weber, Unified Zipf-Gibrat Framework for City Formation and Growth: A Theory and Empirics behind the Core-Periphery Tiebout-Weibull Model,  <span class="lati-1200">Networks and Spatial Economics</span>, 2025,
 	  <a href="https://doi.org/10.1007/s11067-025-09693-z" class="url" ><span class="latt-1200">https://doi.org/10.1007/s11067-025-09693-z</span></a>
 	</li>
 	<li class="enumerate" id="x1-3x1">
 	  <p class="noindent" >S.K.&#x00A0;Chakrabarti, A.&#x00A0;Shapoval, S.&#x00A0;Weber, Games of Social Interactions  with Externalities,  <span class="lati-1200">Journal of Public Economic Theory</span>, V.&#x00A0;27, e70021, 2025,
 	  <a href="https://doi.org/10.1111/jpet.70021" class="url" ><span class="latt-1200">https://doi.org/10.1111/jpet.70021</span></a>
 	</li>
-	<li class="enumerate" id="x1-3x1">
+	<li class="enumerate" id="x1-11x5">
+	  <!--l. 17--><p class="noindent" >M. Le Breton, A. Shapoval, S. Weber, A Game-Theoretical Model of the Landscape Theory,
+	  <span class="lati-1200">Journal of Mathematical Economics</span>, 2021, V.&#x00A0;92, 41&#8211;46, <a href="https://doi.org/10.1016/j.jmateco.2020.11.004" class="url" ><span class="latt-1200">https://doi.org/10.1016/j.jmateco.2020.11.004</span></a>
+	</li>
+	<li class="enumerate" id="x1-19x9">
+	  <p class="noindent" >
+	  A.&#x00A0;Shapoval, and V. Goncharenko, Industry Equilibrium and Welfare in Monopolistic Competition under Uncertainty, 
+	  <span class="lati-1200">Journal of Economics</span>, 2020, V.&#x00A0;130, 187&#8211;218,
+	  <a href="https://doi.org/10.1007/s00712-019-00687-3" class="url" >
+	    <span class="latt-1200">https://doi.org/10.1007/s00712-019-00687-3</span></a>
+	</li>
+	<li class="enumerate" id="x1-29x14">
+	  <p class="noindent" >D.&#x00A0;Davydov,  A.&#x00A0;Shapoval,  S.&#x00A0;Weber,  Linguistic  Equilibrium  with Local  and  World  Languages:  Challenges  of  Globalization,
+	  <span class="lati-1200">World</span>
+	  <span class="lati-1200">Economy</span>, 2018, V.&#x00A0;41,
+	  <a href="https://doi.org/10.1111/twec.12645" class="url" >
+	    <span class="latt-1200">https://doi.org/10.1111/twec.12645</span>
+	  </a>
+	</li>
+	<li class="enumerate" id="x1-23x11">
+	  <p class="noindent" >A.&#x00A0;Shapoval, S.&#x00A0;Weber, Z.&#x00A0;Zakharov, Valence influence in electoral competition with rank objectives,
+	  <span class="lati-1200">International Journal of Game Theory</span>,
+	  2019, V.&#x00A0;48, 713&#8211;753,
+	  <a href="https://doi.org/10.1007/s00182-019-00659-3" class="url" >
+	    <span class="latt-1200">https://doi.org/10.1007/s00182-019-00659-3</span>
+	  </a>
+	</li>
+      </ol>
+
+      <h2 id="applied-math" class="w3-text-khaki">Applied Mathematics</h2>
+
+      <ol class="enumerate1 w3-large">
+	<li class="enumerate" id="x1-3x38">
 	  <p class="noindent" >D.&#x00A0;Sapozhnikov, A.&#x00A0;Shapoval, M.&#x00A0;Shnirman, Comparing Prediction Efficiency in the BTW and Manna Sandpiles,  <span class="lati-1200">Scientific Reports</span>, V.&#x00A0;14, 29529, 2024,
 	  <a href="https://doi.org/10.1038/s41598-024-80621-w" class="url" ><span class="latt-1200">https://doi.org/10.1038/s41598-024-80621-w</span></a>
 	</li>
@@ -134,15 +164,6 @@ class="latt-1200">https://doi.org/10.1007/s10955-021-02744-y</span></a>
 
       </li>
 <li 
-  class="enumerate" id="x1-11x5">
-      <!--l. 17--><p class="noindent" >M. Le Breton, A. Shapoval, S. Weber, A Game-Theoretical Model of the
-      Landscape Theory, <span 
-class="lati-1200">Journal of Mathematical Economics</span>, 2021, V.&#x00A0;92,
-      41&#8211;46, <a 
-href="https://doi.org/10.1016/j.jmateco.2020.11.004" class="url" ><span 
-class="latt-1200">https://doi.org/10.1016/j.jmateco.2020.11.004</span></a>
-      </li>
-<li 
   class="enumerate" id="x1-13x6">
       <!--l. 21--><p class="noindent" >A.&#x00A0;Shapoval, J.-L. Le Mouel, V.&#x00A0;Courtillot, M.&#x00A0;Shnirman, Influence
       of  Very  Large  Spatial  Heterogeneity  on  Estimates  of  Sea-Level
@@ -176,17 +197,6 @@ href="https://doi.org/10.1016/j.cnsns.2019.105149" class="url" ><span
 class="latt-1200">https://doi.org/10.1016/j.cnsns.2019.105149</span></a>
       </li>
 <li 
-  class="enumerate" id="x1-19x9">
-      <!--l. 33--><p class="noindent" >A.&#x00A0;Shapoval, and V. Goncharenko, Industry Equilibrium and Welfare
-
-      in                                                                         Monopolistic
-      Competition under Uncertainty, <span 
-class="lati-1200">Journal of Economics</span>, 2020, V.&#x00A0;130,
-      187&#8211;218, <a 
-href="https://doi.org/10.1007/s00712-019-00687-3" class="url" ><span 
-class="latt-1200">https://doi.org/10.1007/s00712-019-00687-3</span></a>
-      </li>
-<li 
   class="enumerate" id="x1-21x10">
       <!--l. 36--><p class="noindent" >A.&#x00A0;Savostyanov, A.&#x00A0;Shapoval, M.&#x00A0;Shnirman, The inverse problem for
       the Kuramoto model of two nonlinear coupled oscillators driven by
@@ -195,16 +205,6 @@ class="lati-1200">Physica D: Nonlinear Phenomena</span>, 2020,
       V.&#x00A0;401, 132160, <a 
 href="https://doi.org/10.1016/j.physd.2019.132160" class="url" ><span 
 class="latt-1200">https://doi.org/10.1016/j.physd.2019.132160</span></a>
-      </li>
-<li 
-  class="enumerate" id="x1-23x11">
-      <!--l. 40--><p class="noindent" >A.&#x00A0;Shapoval,
-      S.&#x00A0;Weber, Z.&#x00A0;Zakharov, Valence influence in electoral competition with
-      rank objectives, <span 
-class="lati-1200">International Journal of Game Theory</span>, 2019, V.&#x00A0;48,
-      713&#8211;753, <a 
-href="https://doi.org/10.1007/s00182-019-00659-3" class="url" ><span 
-class="latt-1200">https://doi.org/10.1007/s00182-019-00659-3</span></a>
       </li>
 <li 
   class="enumerate" id="x1-25x12">
@@ -225,17 +225,6 @@ class="lati-1200">Astronomy and Astrophysics</span>, 2018, V.&#x00A0;618, A183,
       <a 
 href="https://doi.org/10.1051/0004-6361/201832799" class="url" ><span 
 class="latt-1200">https://doi.org/10.1051/0004-6361/201832799</span></a>
-      </li>
-
-<li 
-  class="enumerate" id="x1-29x14">
-      <!--l. 54--><p class="noindent" >D.&#x00A0;Davydov,  A.&#x00A0;Shapoval,  S.&#x00A0;Weber,  Linguistic  Equilibrium  with
-      Local  and  World  Languages:  Challenges  of  Globalization,  <span 
-class="lati-1200">World</span>
-      <span 
-class="lati-1200">Economy</span>, 2018, V.&#x00A0;41, <a 
-href="https://doi.org/10.1111/twec.12645" class="url" ><span 
-class="latt-1200">https://doi.org/10.1111/twec.12645</span></a>
       </li>
 <li 
   class="enumerate" id="x1-31x15">
@@ -421,10 +410,31 @@ class="lati-1200">International J. Modern Physics C</span>, V.&#x00A0;16,
 class="lati-1200">International J. Modern Physics C</span>, V.&#x00A0;15, &#x2116;&#x00A0;2, 2004, 279&#8211;288.
       </li>
       </ol>
+
+      <h2 id="in-progress" class="w3-text-khaki">In progress</h2>
+      <ol class="enumerate1 w3-large">
+	<li class="enumerate" id="x1-ip3">
+	  <p class="noindent">K.&#x00A0;Butaeva, S.&#x00A0;Durlauf, A.&#x00A0;Shapoval, Intergenerational Mobility in Qing Dynasty China, <span class="lati-1200">in preparation</span>.
+	  </p>
+	</li>
+
+	<li class="enumerate" id="x1-ip2">
+	  <p class="noindent">A.&#x00A0;Kazmierczak, A.&#x00A0;Shapoval, S.&#x00A0;Weber, Tiebout&ndash;Weibull equilibrium: Reconciliation of Gibrat's and Zipf's laws for cities population, <span class="lati-1200">CEPR Discussion Paper No. 19038</span>, CEPR Press, 2024,
+	  <a href="https://cepr.org/publications/dp19038" class="url"><span class="latt-1200">https://cepr.org/publications/dp19038</span></a>
+	  </p>
+	</li>
+
+	<li class="enumerate" id="x1-ip1">
+	  <p class="noindent">V.&#x00A0;Goncharenko, D.A.&#x00A0;Pokrovsky, A.&#x00A0;Shapoval, The Stable Coexistence of Oligopolies and the Competitive Fringe, <span class="lati-1200">NRU Higher School of Economics, Series WP BRP "Economics/EC"</span>, No.&#x00A0;196, 2018,
+	  <a href="https://www.hse.ru/data/2018/07/25/1152373664/196EC2018.pdf" class="url"><span class="latt-1200">https://www.hse.ru/data/2018/07/25/1152373664/196EC2018.pdf</span></a>
+	  </p>
+	</li>
+      </ol>
+
     </div>
 
   <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
+    <div class="w3-container w3-theme-l2 w3-padding-16">
       <p>email: abshapoval\(@\)gmail.com</p>
     </div>
 
@@ -459,6 +469,31 @@ function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
 }
+
+// Load top navigation bar
+function loadNavbar() {
+    fetch('navbartop.html') // Path to your navigation file
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navigation:', error));
+}
+
+// Load sidebar content
+function loadSidebar() {
+    fetch('sidebarcontent.html') // Path to your new sidebar content file
+        .then(response => response.text())
+        .then(data => {
+            // Insert the loaded content into the 'sidebar-placeholder' div
+            document.getElementById('sidebar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading sidebar:', error));
+}
+
+loadNavbar(); // Call the function to load the top navigation
+loadSidebar(); // Call the function to load the sidebar content
+
 </script>
 
 </body>
