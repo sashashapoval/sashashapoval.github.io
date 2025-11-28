@@ -1,0 +1,31 @@
+/* Style for the sidebar Table of Contents */
+.toc-sidebar {
+    position: fixed;        /* Fix the TOC to the left margin */
+    left: 0;                /* Align to the left of the page */
+    top: 0;                 /* Align to the top of the page */
+    width: 15%;           /* Set the width of the sidebar */
+    height: 100%;           /* Make the sidebar cover the full page height */
+    overflow-y: auto;       /* Enable scrolling if the content overflows */
+    overflow-x: scroll;       /* Enable scrolling if the content overflows */
+    padding: 1.5%;          /* Add padding for spacing */
+    background-color: #f8f8f8; /* Light gray background for visibility */
+    border-right: 1px solid #ddd; /* Add a subtle border for separation */
+	font-size: 110%;
+}
+
+/* Shift the content to the right to make space for the sidebar */
+.jp-Notebook {
+    margin-left: 18%;     /* Shift the content by the width of the TOC */
+	margin-right:0%;
+    overflow-x: scroll;       /* Enable scrolling if the content overflows */
+	max-width: calc(100% - 10%);
+}
+
+/* The following moved the body to the right with `classic template' but failed with the lab template */
+.container {
+    margin-left: 10%;     /* Shift the content by the width of the TOC */
+	margin-right:0%;
+    overflow-x: scroll;       /* Enable scrolling if the content overflows */
+	max-width: calc(100% - 10%);
+}
+

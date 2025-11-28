@@ -1,0 +1,25 @@
+
+body{
+  font-size: 120%;
+}
+
+html,h1,h2,h3,h4,h5,h6, div#notebook p, div#notebook{
+  font-family: "Garamond", serif; 
+  /*font-size: 108%;*/
+  line-height: 1.3;
+}
+
+ul, ol, div#notebook p, div#notebook{
+  font-family: "Garamond", serif; 
+  font-size: 110%;
+}
+
+
+.rendered_html pre, .rendered_html table, .CodeMirror, .CodeMirror pre, .CodeMirror-dialog, .CodeMirror-dialog .CodeMirror-search-field, .terminal-app .terminal {
+    font-size: 110%;
+}
+
+.corollary,.overview,.theorem,.thbody,.proof,.def,.markword2line{
+  line-height: 1.5;
+}
+
