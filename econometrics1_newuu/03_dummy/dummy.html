@@ -7566,7 +7566,7 @@ a.anchor-link {
     </style></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f7e86aad">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e0058e31">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8869,6 +8869,11 @@ $$<p>The parameters $\beta$ are typically estimated by <strong>maximum likelihoo
 <div class="markword2line">
  ⚖️ Maximum likelihood estimate of $\beta$
 </div>
+<details>
+<summary><span style="font-weight:bold; color:blue;"><u><li>Question:</li></u></span>what is the distribution $f(x)$ of probabilities of the binomial random variable with the parameter $p$?
+  </summary>
+<p>$f(x) = p^x (1-p)^{1-x}$</p>
+</details>
 <p>The log-likelihood for a sample of size n is:</p>
 $$
 \ell(\beta)
@@ -9016,61 +9021,6 @@ $$<p>If the p-value is small, you reject the null in favor of the two-sided alte
 <span class="n">p_beta1</span> <span class="o">=</span> <span class="n">p_values</span><span class="p">[</span><span class="s1">'x1'</span><span class="p">]</span>   <span class="c1"># replace 'x1' with your variable name # Get the p-value of a specific coefficient, e.g., beta_1</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">p_beta1</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6e0bd0e2">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="markword2line">
-  🔎 Standard Error for the Wald Test in a Logit Model
-</div>
-<p><strong>1. Concept</strong></p>
-<p>In a logit model, the <strong>Wald test</strong> for a coefficient $\beta_j$ is based on the estimated coefficient $\hat{\beta}_j$ and its <strong>standard error</strong> $\text{SE}(\hat{\beta}_j)$:</p>
-$$
-  z = \frac{\hat{\beta}_j}{\text{se}(\hat{\beta}_j)}.
-$$<p>The standard error is the <strong>square root of the diagonal element</strong> of the <strong>covariance matrix of the MLE</strong>:</p>
-$$
-  \text{se}(\hat{\beta}_j) = \sqrt{\text{Var}(\hat{\beta}_j)}.
-$$<p>The covariance matrix is the <strong>inverse of the observed Fisher information matrix</strong>:</p>
-$$
-  \text{Cov}(\hat{\beta}) = I(\hat{\beta})^{-1},
-$$<p>where the Fisher information matrix $I(\beta)$ for the logit model is</p>
-$$
-  I(\beta) = \sum_{i=1}^{n} p_i (1 - p_i) \, X_i X_i^\top,
-$$<p>with</p>
-$$
-  p_i = \frac{e^{X_i^\top \beta}}{1 + e^{X_i^\top \beta}}.
-$$<hr/>
-<p><strong>In Python (<code>statsmodels</code>)</strong></p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
-
-<span class="n">X</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="c1"># X = explanatory variables, y = binary dependent variable</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">Logit</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span>
-<span class="n">result</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
-
-<span class="n">std_errors</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">bse</span> <span class="c1"># Standard errors of all coefficients</span>
-
-<span class="s1">''</span><span class="c1"># Standard error of a specific coefficient, e.g., beta_1</span>
-<span class="n">se_beta1</span> <span class="o">=</span> <span class="n">std_errors</span><span class="p">[</span><span class="s1">'x1'</span><span class="p">]</span>  <span class="c1"># replace 'x1' with your variable name</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">se_beta1</span><span class="p">)</span>
-</pre></div>
-<ul>
-<li><code>result.bse</code> gives the standard errors, which are used for the Wald test.</li>
-<li>The Wald statistic is then:</li>
-</ul>
-$$
-z = \frac{\hat{\beta}_j}{\text{se}(\hat{\beta}_j)}.
-$$<ul>
-<li>The two-sided p-value is:</li>
-</ul>
-$$
-p = 2 (1 - \Phi(|z|)).
-$$
 </div>
 </div>
 </div>
@@ -9364,7 +9314,7 @@ $$<ul>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Summary">Summary<a class="anchor-link" href="#Summary">¶</a></h1><ol>
-<li>Categorical characteristics as dummy variables in linear regression</li>
+<li><a href="#Example-Single-dummy-variable">Categorical characteristics as dummy variables in linear regression</a></li>
 <li>Linear probability model (response variable, being binary, is understood as a probability of success; interpretation of the model, drawback with values located outside the $[0, 1]$ interval and the violation of homoskedasticity assumption)</li>
 <li>Logit model (nonlinearity, Wald test for $\beta_i = 0$, implementation with Python)</li>
 </ol>
