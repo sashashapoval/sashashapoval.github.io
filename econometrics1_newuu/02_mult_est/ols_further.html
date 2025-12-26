@@ -7566,12 +7566,21 @@ a.anchor-link {
     </style></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=21eac7fb">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=80f95990">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="toc-sidebar">CONTENT<br/>- <a href="#Consistency-of-the-OLS-estimator">Consistency of the OLS estimator</a><br/>- <a href="#Asymptotic-normality-of-the-OLS-estimators">Asymptotic normality of the OLS estimators</a><br/>- <a href="#LM-Testing">LM Testing</a><br/>- <a href="#Nonlinearity-in-the-regression">Nonlinearity in the regression</a><br/>  - <a href="#Considerations-When-Using-Logarithms">Considerations When Using Logarithms</a><br/>  - <a href="#Models-with-Quadratics">Models with Quadratics</a><br/>  - <a href="#Generalizing-Considerations-When-Using-Quadratics">Generalizing Considerations When Using Quadratics</a><br/>- <a href="#Summary">Summary</a><br/></div>
+<div class="toc-sidebar"><div class="toc-line"><strong>CONTENT</strong></div><div class="toc-line" style="margin-left:0px;"><a href="#Consistency-of-the-OLS-estimator">Consistency of the OLS estimator</a></div><div class="toc-line" style="margin-left:0px;"><a href="#Asymptotic-normality-of-the-OLS-estimators">Asymptotic normality of the OLS estimators</a></div><div class="toc-line" style="margin-left:0px;"><a href="#LM-Testing">LM Testing</a></div><div class="toc-line" style="margin-left:0px;"><a href="#Nonlinearity-in-the-regression">Nonlinearity in the regression</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Considerations-When-Using-Logarithms">Considerations When Using Logarithms</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Models-with-Quadratics">Models with Quadratics</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Generalizing-Considerations-When-Using-Quadratics">Generalizing Considerations When Using Quadratics</a></div><div class="toc-line" style="margin-left:0px;"><a href="#Summary">Summary</a></div><br/><br/>
+<div class="toc-line"><span style="font-size:75%;"><strong>COURSE DETAILS</strong></span></div>
+<div class="toc-line">
+<span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../01_simple/regres.html">Simple linear regression</a></span>
+<span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../02_mult_est/mult_regr_estimation.html">Multiple regression: Estimation</a></span>
+<span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../02_mult_est/mult_regr_estimation.html">Multiple regression: Inference.</a></span>
+<span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../02_mult_est/ols_further.html">Further issues of OLS.</a></span>
+<span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../03_dummy/dummy.html">Dummy variables.</a></span>
+<span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../04_heteroskedasticity/heteroskedasticity.html">Heteroskedasticity.</a></span>
+</div></div>
 </div>
 </div>
 </div>
@@ -7587,7 +7596,7 @@ a.anchor-link {
 </div>
 <div class="boxfinal" style="background-color:yellow;width:100%;">
 <div></div><div></div><div></div>
-<div style="color:blue;background-color:yellow;font-size:150%;text-align:center;"><a href="./../intro/introduction.html">Econometrics</a></div><div></div>
+<div style="color:blue;background-color:yellow;font-size:150%;text-align:center;"><a href="./../intro/introduction.html" style="color:inherit;text-decoration:none;">Econometrics</a></div><div></div>
 <div style="background-color:yellow;">
 <span><img alt="No description has been provided for this image" src="../style/logo_stat.jpg" width="25"/></span>
 </div>
@@ -7819,8 +7828,8 @@ so $\text{SST}_j$ grows on the order of $n$.</br></br></li>
 <li><p>Implication:</p>
 <ul>
 <li>Since $\hat{s}^2$ does not grow with $n$ and $\text{SST}_j \sim n$,<br>
-$$\operatorname{Var}(\hat\beta_j) \sim\frac{1}{n},$$<br>
-meaning the variance shrinks at rate $1/n$.</br></br></li>
+$$\operatorname{Var}(\hat\beta_j) \sim\frac{1}{n},$$<br/>
+meaning the variance shrinks at rate $1/n$.</br></li>
 </ul>
 </li>
 <li><p>Terminology:</p>
@@ -7831,8 +7840,8 @@ meaning the variance shrinks at rate $1/n$.</br></br></li>
 </ul>
 </li>
 <li><p>From the rate result:
-$$se(\hat\beta_j) \approx \frac{c_j}{\sqrt{n}},$$<br>
-where $c_j &gt; 0$ does not depend on $n$.</br></p>
+$$se(\hat\beta_j) \approx \frac{c_j}{\sqrt{n}},$$<br/>
+where $c_j &gt; 0$ does not depend on $n$.</p>
 </li>
 </ul>
 </div>
@@ -7860,16 +7869,16 @@ $H_0: \beta_{n} = \beta_{n-1} = \cdots = \beta_{n-q+1} = 0$</p>
 $$
   y_i = \beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_{n-q} x_{i,n-q} + u_i, 
   \quad i = 1, \ldots, n
-$$<p>2. Obtain residuals $\hat{u}$.<br>
-3. Regress $\hat{u}$ on all regressors (restricted + excluded).<br>
-4. Compute<br>
-   $LM = n R^2_{\hat{u}}$</br></br></br></p>
+$$<p>2. Obtain residuals $\hat{u}$.<br/>
+3. Regress $\hat{u}$ on all regressors (restricted + excluded).<br/>
+4. Compute<br/>
+   $LM = n R^2_{\hat{u}}$</p>
 </li>
-<li><p><strong>Asymptotic distribution:</strong><br>
-$LM \to \chi^2_q$ (chi2 distribution with $q$ degree of freedom)</br></p>
+<li><p><strong>Asymptotic distribution:</strong><br/>
+$LM \to \chi^2_q$ (chi2 distribution with $q$ degree of freedom)</p>
 </li>
-<li><p><strong>Decision rule:</strong> Under the confidence level of $\alpha$, reject $H_0$ if<br>
-$LM &gt; \chi^2_{1-\alpha, q}$</br></p>
+<li><p><strong>Decision rule:</strong> Under the confidence level of $\alpha$, reject $H_0$ if<br/>
+$LM &gt; \chi^2_{1-\alpha, q}$</p>
 </li>
 </ul>
 </div>

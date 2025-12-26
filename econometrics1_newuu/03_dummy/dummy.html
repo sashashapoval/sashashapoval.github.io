@@ -7566,12 +7566,21 @@ a.anchor-link {
     </style></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e0058e31">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4ad978b7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="toc-sidebar">CONTENT<br/>- <a href="#Motivation">Motivation</a><br/>- <a href="#Example-Single-dummy-variable">Example Single dummy variable</a><br/>- <a href="#Linear-Probability-Model">Linear Probability Model</a><br/>- <a href="#Logit-model">Logit model</a><br/>- <a href="#Summary">Summary</a><br/></div>
+<div class="toc-sidebar"><div class="toc-line"><strong>CONTENT</strong></div><div class="toc-line" style="margin-left:0px;"><a href="#Motivation">Motivation</a></div><div class="toc-line" style="margin-left:0px;"><a href="#Example-Single-dummy-variable">Example Single dummy variable</a></div><div class="toc-line" style="margin-left:0px;"><a href="#Linear-Probability-Model">Linear Probability Model</a></div><div class="toc-line" style="margin-left:0px;"><a href="#Logit-model">Logit model</a></div><div class="toc-line" style="margin-left:0px;"><a href="#Summary">Summary</a></div><br/><br/>
+<div class="toc-line"><span style="font-size:75%;"><strong>COURSE DETAILS</strong></span></div>
+<div class="toc-line">
+<span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../01_simple/regres.html">Simple linear regression</a></span>
+<span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../02_mult_est/mult_regr_estimation.html">Multiple regression: Estimation</a></span>
+<span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../02_mult_est/mult_regr_estimation.html">Multiple regression: Inference.</a></span>
+<span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../02_mult_est/ols_further.html">Further issues of OLS.</a></span>
+<span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../03_dummy/dummy.html">Dummy variables.</a></span>
+<span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../04_heteroskedasticity/heteroskedasticity.html">Heteroskedasticity.</a></span>
+</div></div>
 </div>
 </div>
 </div>
@@ -7635,7 +7644,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="markword2line">
- ⚖️ 🧩 Example 1
+ ⚖️ Example 1
 </div>
 <ol>
 <li>Model:</li>
@@ -8621,7 +8630,6 @@ $$<table>
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">wooldridge</span> <span class="k">as</span> <span class="nn">woo</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">smf</span>
-<span class="kn">from</span> <span class="nn">regres</span> <span class="kn">import</span> <span class="n">format_regression_output</span>
 <span class="n">mroz</span> <span class="o">=</span> <span class="n">woo</span><span class="o">.</span><span class="n">dataWoo</span><span class="p">(</span><span class="s1">'mroz'</span><span class="p">)</span>
 <span class="c1"># estimate linear probability model:</span>
 <span class="n">reg_lin</span> <span class="o">=</span> <span class="n">smf</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="s1">'inlf ~ nwifeinc + educ + exper + I(exper**2) + age + kidslt6 + kidsge6'</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">mroz</span><span class="p">)</span>
@@ -8634,6 +8642,7 @@ $$<table>
 <span class="k">if</span> <span class="n">parent_dir</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">parent_dir</span><span class="p">)</span>
 <span class="c1">#---Done</span>
+<span class="kn">from</span> <span class="nn">regres</span> <span class="kn">import</span> <span class="n">format_regression_output</span>
 <span class="n">format_regression_output</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -9314,9 +9323,9 @@ $$<ul>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Summary">Summary<a class="anchor-link" href="#Summary">¶</a></h1><ol>
-<li><a href="#Example-Single-dummy-variable">Categorical characteristics as dummy variables in linear regression</a></li>
-<li>Linear probability model (response variable, being binary, is understood as a probability of success; interpretation of the model, drawback with values located outside the $[0, 1]$ interval and the violation of homoskedasticity assumption)</li>
-<li>Logit model (nonlinearity, Wald test for $\beta_i = 0$, implementation with Python)</li>
+<li><a href="#Example-Single-dummy-variable">Categorical characteristics as dummy variables</a> in linear regression</li>
+<li><a href="#Linear-Probability-Model">Linear probability model</a> (response variable, being binary, is understood as a probability of success; interpretation of the model, drawback with values located outside the $[0, 1]$ interval and the violation of homoskedasticity assumption)</li>
+<li><a href="#Logit-model">Logit model</a> (nonlinearity, Wald test for $\beta_i = 0$, implementation with Python)</li>
 </ol>
 <hr/>
 </div>
