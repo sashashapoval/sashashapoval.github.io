@@ -7569,12 +7569,12 @@ a.anchor-link {
     </style></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0426b455">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=19d32260">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="toc-sidebar"><div class="toc-line"><strong>CONTENT</strong></div><div class="toc-line" style="margin-left:0px;"><a href="#span-stylecolorblueSimple-Regression-Introductionspan"><span style="color:blue;">Simple Regression: Introduction</span></a></div><div class="toc-line" style="margin-left:10px;"><a href="#Regression">Regression</a></div><div class="toc-line" style="margin-left:20px;"><a href="#Example">Example</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Assumptions-on-the-random-term">Assumptions on the random term</a></div><div class="toc-line" style="margin-left:20px;"><a href="#Linear-dependence-of-the-expected-mean-on-the-regressor">Linear dependence of the expected mean on the regressor</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Construction-of-the-regression-as-the-best-linear-fit">Construction of the regression as the best linear fit</a></div><div class="toc-line" style="margin-left:20px;"><a href="#Residiuals">Residiuals</a></div><div class="toc-line" style="margin-left:20px;"><a href="#Goodness-of-fit">Goodness-of-fit</a></div><div class="toc-line" style="margin-left:0px;"><a href="#Incorporating-nonlinearity">Incorporating nonlinearity</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Expected-value-and-variance-of-the-estimate">Expected value and variance of the estimate</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Testing">Testing</a></div><div class="toc-line" style="margin-left:0px;"><a href="#Regression-through-the-Origin">Regression through the Origin</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Summary">Summary</a></div><br/><br/>
+<div class="toc-sidebar"><div class="toc-line"><strong>CONTENT</strong></div><div class="toc-line" style="margin-left:0px;"><a href="#span-stylecolorblueSimple-Regression-Introductionspan"><span style="color:blue;">Simple Regression: Introduction</span></a></div><div class="toc-line" style="margin-left:10px;"><a href="#Regression">Regression</a></div><div class="toc-line" style="margin-left:20px;"><a href="#Example">Example</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Assumptions-on-the-random-term">Assumptions on the random term</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Expression-for-the-coefficients-of-the-regression">Expression for the coefficients of the regression</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Construction-of-the-regression-as-the-best-linear-fit">Construction of the regression as the best linear fit</a></div><div class="toc-line" style="margin-left:20px;"><a href="#Residiuals">Residiuals</a></div><div class="toc-line" style="margin-left:20px;"><a href="#Goodness-of-fit">Goodness-of-fit</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Incorporating-nonlinearity">Incorporating nonlinearity</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Expected-value-and-variance-of-the-estimate">Expected value and variance of the estimate</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Testing">Testing</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Regression-through-the-Origin">Regression through the Origin</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Summary">Summary</a></div><br/><br/>
 <div class="toc-line"><span style="font-size:75%;"><strong>COURSE DETAILS</strong></span></div>
 <div class="toc-line">
 <span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../01_simple/regres.html">Simple linear regression</a></span>
@@ -7680,10 +7680,12 @@ $$</br></p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Example">Example<a class="anchor-link" href="#Example">¶</a></h3><p>We regress wage on the years of education:
+$$
 \begin{equation}
     wage = \beta_0 + \beta_1 educ + u
     \label{e:wage:regr}
 \end{equation}
+$$
 Then $\beta_1$ measures the change
 in hourly wage given another year of education, holding all other factors fixed. Some of those factors
 include labor force experience, innate ability, tenure with current employer, work ethic, and numerous
@@ -7743,7 +7745,8 @@ $$<p>Discuss whether assumption \eqref{e:zerocondmean} holds.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Linear-dependence-of-the-expected-mean-on-the-regressor">Linear dependence of the expected mean on the regressor<a class="anchor-link" href="#Linear-dependence-of-the-expected-mean-on-the-regressor">¶</a></h3><p>Takig the model equation \eqref{e:regression} and using assumption \eqref{e:zerocondmean}, compute the conditional
+<p><strong>Linear dependence of the expected mean on the regressor</strong></p>
+<p>Takig the model equation \eqref{e:regression} and using assumption \eqref{e:zerocondmean}, compute the conditional
 expectation of $y$ given $x$:</p>
 \begin{equation}
     \mathbf{E}(y | x) = 
@@ -7754,11 +7757,6 @@ $y' = \beta_0 + \beta_1 x$.</p>
 <li>$y$ consists of systematic part $\mathbf{E}(y | x)$</li>
 <li>and unsystematic part $u$</li>
 </ul>
-$$
-      \hat{\beta}_1 =
-     \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}
-     {\sum_{i=1}^n (x_i - \bar{x})^2}
-$$
 </div>
 </div>
 </div>
@@ -7768,7 +7766,13 @@ $$
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Derivation of $\beta_0$ and $\beta_1$</strong></p>
+<h2 id="Expression-for-the-coefficients-of-the-regression">Expression for the coefficients of the regression<a class="anchor-link" href="#Expression-for-the-coefficients-of-the-regression">¶</a></h2>$$
+      \hat{\beta}_1 =
+     \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}
+     {\sum_{i=1}^n (x_i - \bar{x})^2}
+$$$$
+  \hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x}
+$$
 </div>
 </div>
 </div>
@@ -7884,7 +7888,10 @@ Then
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Construction-of-the-regression-as-the-best-linear-fit">Construction of the regression as the best linear fit<a class="anchor-link" href="#Construction-of-the-regression-as-the-best-linear-fit">¶</a></h2><p><strong>$y$ as $x$ plus noise</strong></p>
+<h2 id="Construction-of-the-regression-as-the-best-linear-fit">Construction of the regression as the best linear fit<a class="anchor-link" href="#Construction-of-the-regression-as-the-best-linear-fit">¶</a></h2><div class="alert alert-info" role="alert">
+  ⚠️ <strong>Attention:</strong> This procedure is equivalent to the above construction
+</div>
+<p><strong>$y$ as $x$ plus noise</strong></p>
 <ul>
 <li>see a hidden code below</li>
 </ul>
@@ -8169,23 +8176,12 @@ $$<ul>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c00ae7a7">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>To think</strong>
-the Wooldridge handbook, pages 77-78 of the file, questions 1-4</p>
-</div>
-</div>
-</div>
-</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=92770f61">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Comment to question 3</strong></p>
+<p><strong>Comment to question 3, the Wooldridge handbook, pages 77-78 of the file</strong></p>
 </div>
 </div>
 </div>
@@ -8280,7 +8276,7 @@ the Wooldridge handbook, pages 77-78 of the file, questions 1-4</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Incorporating-nonlinearity">Incorporating nonlinearity<a class="anchor-link" href="#Incorporating-nonlinearity">¶</a></h1>$$
+<h2 id="Incorporating-nonlinearity">Incorporating nonlinearity<a class="anchor-link" href="#Incorporating-nonlinearity">¶</a></h2>$$
   \log(y) = \beta_0 + \beta_1 x + u
 $$<p>Another version of the model \eqref{e:wage:regr}:
 $$
@@ -8567,7 +8563,7 @@ significance level = 0.01; CI = [-0.030, 0.235]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Regression-through-the-Origin">Regression through the Origin<a class="anchor-link" href="#Regression-through-the-Origin">¶</a></h1><p>Given $\Exp(y | x=0 ) = 0$, the regression is</p>
+<h2 id="Regression-through-the-Origin">Regression through the Origin<a class="anchor-link" href="#Regression-through-the-Origin">¶</a></h2><p>Given $\Exp(y | x=0 ) = 0$, the regression is</p>
 $$
   y = \beta_1 x + u
 $$<p>With same assumptions on $u$, the estimate $\tilde{\beta}_1$ of $\beta_1$ is</p>
