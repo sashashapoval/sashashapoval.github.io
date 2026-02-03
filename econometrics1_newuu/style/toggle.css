@@ -1,0 +1,30 @@
+/* This block sets toggle-blocks */
+.toggle-container {
+  margin-bottom: 10px; /* space below container, so Show/Hide doesn’t overlap */
+}
+
+.toggle-button {
+  cursor: pointer;
+  font-size: 0.9em;
+  margin: 8px 5px; 
+  color: #1a73e8;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.toggle-button:hover {
+  text-decoration: underline;
+}
+
+.secret-button {
+    color: darkred;
+    font-weight: bold;
+    margin-bottom: 8px; 
+    margin-right: 5px; 
+}
+.secret-button:hover {
+    text-decoration: underline;
+}
+/* ----Done */
+
