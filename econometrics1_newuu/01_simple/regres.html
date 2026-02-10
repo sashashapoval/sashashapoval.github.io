@@ -7569,12 +7569,12 @@ a.anchor-link {
     </style></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=19d32260">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=81e436e4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="toc-sidebar"><div class="toc-line"><strong>CONTENT</strong></div><div class="toc-line" style="margin-left:0px;"><a href="#span-stylecolorblueSimple-Regression-Introductionspan"><span style="color:blue;">Simple Regression: Introduction</span></a></div><div class="toc-line" style="margin-left:10px;"><a href="#Regression">Regression</a></div><div class="toc-line" style="margin-left:20px;"><a href="#Example">Example</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Assumptions-on-the-random-term">Assumptions on the random term</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Expression-for-the-coefficients-of-the-regression">Expression for the coefficients of the regression</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Construction-of-the-regression-as-the-best-linear-fit">Construction of the regression as the best linear fit</a></div><div class="toc-line" style="margin-left:20px;"><a href="#Residiuals">Residiuals</a></div><div class="toc-line" style="margin-left:20px;"><a href="#Goodness-of-fit">Goodness-of-fit</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Incorporating-nonlinearity">Incorporating nonlinearity</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Expected-value-and-variance-of-the-estimate">Expected value and variance of the estimate</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Testing">Testing</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Regression-through-the-Origin">Regression through the Origin</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Summary">Summary</a></div><br/><br/>
+<div class="toc-sidebar"><div class="toc-line"><strong>CONTENT</strong></div><div class="toc-line" style="margin-left:0px;"><a href="#span-stylecolorblueSimple-Regression-Introductionspan"><span style="color:blue;">Simple Regression: Introduction</span></a></div><div class="toc-line" style="margin-left:10px;"><a href="#Regression">Regression</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Assumptions-regarding-the-random-term">Assumptions regarding the random term</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Expression-for-the-coefficients-of-the-regression">Expression for the coefficients of the regression</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Construction-of-the-regression-as-the-best-linear-fit">Construction of the regression as the best linear fit</a></div><div class="toc-line" style="margin-left:20px;"><a href="#Residiuals">Residiuals</a></div><div class="toc-line" style="margin-left:20px;"><a href="#Goodness-of-fit">Goodness-of-fit</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Incorporating-nonlinearity">Incorporating nonlinearity</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Expected-value-and-variance-of-the-estimate">Expected value and variance of the estimate</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Testing">Testing</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Regression-through-the-Origin">Regression through the Origin</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Summary">Summary</a></div><br/><br/>
 <div class="toc-line"><span style="font-size:75%;"><strong>COURSE DETAILS</strong></span></div>
 <div class="toc-line">
 <span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../01_simple/regres.html">Simple linear regression</a></span>
@@ -7679,7 +7679,8 @@ $$</br></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Example">Example<a class="anchor-link" href="#Example">¶</a></h3><p>We regress wage on the years of education:
+<p><strong>Example:</strong></p>
+<p>We regress wage on the years of education:
 $$
 \begin{equation}
     wage = \beta_0 + \beta_1 educ + u
@@ -7699,7 +7700,7 @@ other things.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Assumptions-on-the-random-term">Assumptions on the random term<a class="anchor-link" href="#Assumptions-on-the-random-term">¶</a></h2><p><strong>$u$ is $0$ on average</strong><br>
+<h2 id="Assumptions-regarding-the-random-term">Assumptions regarding the random term<a class="anchor-link" href="#Assumptions-regarding-the-random-term">¶</a></h2><p><strong>$u$ is $0$ on average</strong><br>
 Mathematically, it means that
 \begin{equation}
     \mathbf{E} u = 0.
@@ -8579,13 +8580,14 @@ $$<p><strong>Prove, using single-variable calculus</strong></p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Summary">Summary<a class="anchor-link" href="#Summary">¶</a></h2><ul>
-<li><a href="#Regression">The best linear fit</a> as the regression resulted from economics assumptions</li>
-<li><a href="#Construction-of-the-best-fit">Construction of the best linear fit</a></li>
-<li><a href="#Expected-value-and-variance-of-the-estimate">Expected value and variance of the estimator</a> of the regression coefficient $\beta_1$</li>
-<li><a href="#Testing">Hypothesis testing</a>: $\beta_1 \ne 0$</li>
+<h2 id="Summary">Summary<a class="anchor-link" href="#Summary">¶</a></h2><p>In this manual</p>
+<ul>
+<li><a href="#Regression">The simple linear regression</a> is defined.</li>
+<li><a href="#Assumptions-regarding-the-random-term">Standard assumptions</a> regarding the random term are introduced and the equation for the regression coefficients are found</li>
+<li>The problem is reformulated as the <a href="#Expression-for-the-coefficients-of-the-regression">Expression for the coefficients of the regression</a></li>
+<li><a href="#Expected-value-and-variance-of-the-estimate">Expected value and variance of the estimator</a> of the regression coefficient: we derived unbiasness of the estimators. Then we assumed additionally heteroscedasticity and found the expression for the variance of the estimators.</li>
+<li>Exploiting the results regarding estimators, we performed <a href="#Testing">hypothesis testing</a>: $\beta_1 \ne 0$</li>
 </ul>
-<hr/>
 </div>
 </div>
 </div>

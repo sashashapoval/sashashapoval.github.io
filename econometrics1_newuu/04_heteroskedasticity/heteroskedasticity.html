@@ -4,7 +4,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>_notebook_with_toc</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<title>heteroskedasticity</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7530,9 +7530,12 @@ a.anchor-link {
 <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js" type="text/javascript"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<script src="../style/toggle-code.js" type="text/javascript"></script>
+<script src="../style/toggle.js" type="text/javascript"></script>
 <link href="../style/custom_toc.css" rel="stylesheet" type="text/css"/>
 <link href="../style/4convertion.css" rel="stylesheet" type="text/css"/>
 <link href="../style/custom.css" rel="stylesheet" type="text/css"/>
+<link href="../style/toggle.css" rel="stylesheet" type="text/css"/>
 <style>
       body {
 	counter-reset: h2counter h3counter h4counter;
@@ -7566,12 +7569,12 @@ a.anchor-link {
     </style></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=279b6c0d">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8ea3ea49">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="toc-sidebar"><div class="toc-line"><strong>CONTENT</strong></div><div class="toc-line" style="margin-left:0px;"><a href="#Variance-of-the-slope-under-Heteroskedasticity">Variance of the slope under Heteroskedasticity</a></div><div class="toc-line" style="margin-left:0px;"><a href="#Weighted-Least-Squares">Weighted Least Squares</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Known-variation-in-the-variance">Known variation in the variance</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Estimating-variation-in-the-variance">Estimating variation in the variance</a></div><div class="toc-line" style="margin-left:0px;"><a href="#Summary">Summary</a></div><br/><br/>
+<div class="toc-sidebar"><div class="toc-line"><strong>CONTENT</strong></div><div class="toc-line" style="margin-left:0px;"><a href="#Variance-of-the-estimator-under-Heteroskedasticity">Variance of the estimator under Heteroskedasticity</a></div><div class="toc-line" style="margin-left:0px;"><a href="#Weighted-Least-Squares">Weighted Least Squares</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Known-variation-in-the-variance">Known variation in the variance</a></div><div class="toc-line" style="margin-left:10px;"><a href="#Estimating-variation-in-the-variance">Estimating variation in the variance</a></div><div class="toc-line" style="margin-left:0px;"><a href="#Summary">Summary</a></div><br/><br/>
 <div class="toc-line"><span style="font-size:75%;"><strong>COURSE DETAILS</strong></span></div>
 <div class="toc-line">
 <span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../01_simple/regres.html">Simple linear regression</a></span>
@@ -7580,7 +7583,8 @@ a.anchor-link {
 <span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../02_mult_est/ols_further.html">Further issues of OLS.</a></span>
 <span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../03_dummy/dummy.html">Dummy variables.</a></span>
 <span style="display:block; line-height:1; margin:0 -1px; padding:1px 0;font-size:75%">• <a href="../04_heteroskedasticity/heteroskedasticity.html">Heteroskedasticity.</a></span>
-</div></div>
+</div>
+<br/></div>
 </div>
 </div>
 </div>
@@ -7633,7 +7637,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><span style="color:blue; font-size:140%">⚖️ Heteroskedasticity</span></p>
-<h1 id="Variance-of-the-slope-under-Heteroskedasticity">Variance of the slope under Heteroskedasticity<a class="anchor-link" href="#Variance-of-the-slope-under-Heteroskedasticity">¶</a></h1><p>Consider the simple linear regression model:</p>
+<h1 id="Variance-of-the-estimator-under-Heteroskedasticity">Variance of the estimator under Heteroskedasticity<a class="anchor-link" href="#Variance-of-the-estimator-under-Heteroskedasticity">¶</a></h1><p>Consider the simple linear regression model:</p>
 $$
   y_i = \beta_0 + \beta_1 x_i + u_i, \quad i = 1, \dots, n
 $$<p>where the error terms $u_i$ may be heteroskedastic:</p>
@@ -7666,19 +7670,12 @@ Under standard assumptions (linear model, independent observations, finite fourt
 $\widehat{\mathrm{Var}}(\hat\beta_1) \xrightarrow{p} \mathrm{Var}(\hat\beta_1)$ as $n \to \infty$.<br>
 That is, it converges in probability to the true variance of the OLS estimator.</br></br></br></p>
 </li>
-<li><p><strong>Robustness to heteroskedasticity:</strong><br>
-Unlike the classical formula 
-$$
-\mathrm{Var}(\hat\beta_1) = \frac{\sigma^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2},
-$$<br>
-which assumes homoskedastic errors ($\mathrm{Var}(u_i) = \sigma^2$), the robust formula does <strong>not require constant variance</strong>.</br></br></p>
+<li><p><strong>Usage: estimated residuals:</strong><br>
+In practice, we replace the unknown $u_i^2$ with the squared OLS residuals $\hat u_i^2$.<br>
+This substitution introduces some small-sample bias, but the estimator remains <strong>asymptotically valid</strong>.</br></br></p>
 </li>
-<li><p><strong>Usage estimated residuals:</strong><br/>
-In practice, we replace the unknown $u_i^2$ with the squared OLS residuals $\hat u_i^2$.<br/>
-This substitution introduces some small-sample bias, but the estimator remains <strong>asymptotically valid</strong>.</p>
-</li>
-<li><p><strong>Interpretation:</strong><br/>
-The robust variance provides a correct basis for <strong>t-tests and confidence intervals</strong> in large samples even when heteroskedasticity is present.</p>
+<li><p><strong>Usage: testing:</strong><br>
+The robust variance provides a correct basis for <strong>t-tests and confidence intervals</strong> in large samples incase of heteroskedasticity.</br></p>
 </li>
 </ol>
 </div>
@@ -7723,7 +7720,7 @@ The robust variance is used to compute <strong>t-tests, confidence intervals, an
 </li>
 </ol>
 <details>
-<summary><span style="font-weight:bold; color:blue;"><u><li>Question:</li></u></span>Show that in the case of homoskedasticity, the standard formula $\displaystyle\mathrm{Var}(\hat\beta_j) = \frac{\sigma^2}{\sum_{i=1}^{n} \hat r_{ij}^2}$
+<summary><span style="font-weight:bold; color:blue;"><u><li>Question:</li></u></span>Show that in the case of homoskedasticity, the standard formula $\displaystyle\mathrm{Var}(\hat\beta_j) = \frac{\sigma^2}{\sum_{i=1}^{n} \hat r_{ij}^2}$ holds
   </summary>
 <p>Assuming homoskedasticity (the first equliaty),
   $$
@@ -7847,7 +7844,7 @@ $$<table>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9d374959">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell celltag_toggle-input" id="cell-id=9d374959">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7892,21 +7889,85 @@ one-sided p-value (robust): 1.13e-07
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5f30223c">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell celltag_toggle-input" id="cell-id=5f30223c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#full results</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Function formatting the regression outcome; modified to include precision arguments</span>
+<span class="k">def</span> <span class="nf">format_regression_output</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">precision_p</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">precision_t</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""</span>
+<span class="sd">    Print a statsmodels OLS regression in Stata-style:</span>
+<span class="sd">    - Model equation with coefficients</span>
+<span class="sd">    - Coefficients with standard errors underneath</span>
+<span class="sd">    - t-statistics and p-values (precision adjustable)</span>
+<span class="sd">    - Number of observations, SSR, and R-squared</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    results : statsmodels regression results object</span>
+<span class="sd">    precision_p : int, optional</span>
+<span class="sd">        Number of decimal places for p-values (default: 3)</span>
+<span class="sd">    precision_t : int, optional</span>
+<span class="sd">        Number of decimal places for t-statistics (default: 3)</span>
+<span class="sd">    """</span>
+
+    <span class="n">params</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">params</span>
+    <span class="n">ses</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">bse</span>
+    <span class="n">t_stats</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">tvalues</span>
+    <span class="n">p_values</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">pvalues</span>
+    <span class="n">dep_var</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">endog_names</span>
+
+    <span class="c1"># ----- Build regression equation -----</span>
+    <span class="n">eq</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">dep_var</span><span class="si">}</span><span class="s2"> = "</span>
+
+    <span class="c1"># Intercept first (if present)</span>
+    <span class="k">if</span> <span class="s2">"Intercept"</span> <span class="ow">in</span> <span class="n">params</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
+        <span class="n">eq</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">params</span><span class="p">[</span><span class="s1">'Intercept'</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">eq</span> <span class="o">+=</span> <span class="s2">"0"</span>
+
+    <span class="c1"># Add other variables</span>
+    <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="n">params</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">var</span> <span class="o">==</span> <span class="s2">"Intercept"</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="n">sign</span> <span class="o">=</span> <span class="s2">"+"</span> <span class="k">if</span> <span class="n">params</span><span class="p">[</span><span class="n">var</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="k">else</span> <span class="s2">"-"</span>
+        <span class="n">eq</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">" </span><span class="si">{</span><span class="n">sign</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="nb">abs</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="n">var</span><span class="p">])</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">*</span><span class="si">{</span><span class="n">var</span><span class="si">}</span><span class="s2">"</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Model equation:</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"  "</span> <span class="o">+</span> <span class="n">eq</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+    <span class="c1"># ----- Coefficients + SEs + t-stats + p-values -----</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Coefficients (standard errors in parentheses, t-statistics and p-values in brackets):</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">var</span> <span class="ow">in</span> <span class="n">params</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">var</span><span class="si">:</span><span class="s2">12</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">params</span><span class="p">[</span><span class="n">var</span><span class="p">]</span><span class="si">:</span><span class="s2"> .4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="s1">''</span><span class="si">:</span><span class="s2">12</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">ses</span><span class="p">[</span><span class="n">var</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">) "</span>
+            <span class="sa">f</span><span class="s2">"[t=</span><span class="si">{</span><span class="n">t_stats</span><span class="p">[</span><span class="n">var</span><span class="p">]</span><span class="si">:</span><span class="s2">.</span><span class="si">{</span><span class="n">precision_t</span><span class="si">}</span><span class="s2">f</span><span class="si">}</span><span class="s2">, p=</span><span class="si">{</span><span class="n">p_values</span><span class="p">[</span><span class="n">var</span><span class="p">]</span><span class="si">:</span><span class="s2">.</span><span class="si">{</span><span class="n">precision_p</span><span class="si">}</span><span class="s2">f</span><span class="si">}</span><span class="s2">]"</span>
+        <span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+
+    <span class="c1"># ----- Model statistics -----</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">nobs</span><span class="p">)</span>
+    <span class="n">ssr</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">results</span><span class="o">.</span><span class="n">resid</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+    <span class="n">r2</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">rsquared</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Number of observations (n): </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Sum of squared residuals (SSR): </span><span class="si">{</span><span class="n">ssr</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"R-squared: </span><span class="si">{</span><span class="n">r2</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1">#----</span>
+
+<span class="c1">#full results</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 <span class="kn">import</span> <span class="nn">os</span>
 <span class="n">parent_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="s1">'..'</span><span class="p">,</span> <span class="s1">'lib'</span><span class="p">))</span>
 <span class="k">if</span> <span class="n">parent_dir</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">parent_dir</span><span class="p">)</span>
 <span class="c1">#---Done</span>
-<span class="kn">from</span> <span class="nn">regres</span> <span class="kn">import</span> <span class="n">format_regression_output</span>
+<span class="c1">#from regres import format_regression_output #in my notebook, the function is hidden into a python file</span>
 <span class="n">format_regression_output</span><span class="p">(</span><span class="n">results_robust</span><span class="p">,</span> <span class="n">precision_p</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8115,7 +8176,7 @@ Breusch-Pagan F p-value: 1.9964771276233617e-08
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c273903e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell celltag_toggle-input" id="cell-id=c273903e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8211,7 +8272,7 @@ white     -0.05872  0.12044 -0.48758  0.62585
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6b4a609f">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell celltag_toggle-input" id="cell-id=6b4a609f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8273,12 +8334,13 @@ p-value: 0.5110883633440992
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="markword2line">
-    📈 Can we visually confirm that H_0: <code>['black = 0', 'white = 0']</code> is NOT rejected
+    📈 Can we visually confirm that H_0: <code>['black = 0', 'white = 0']</code> is NOT rejected?
+</div>
+<p>Probably, yes; see two approaches below</p>
 </div>
 </div>
 </div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=129396a2">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell celltag_toggle-input" id="cell-id=129396a2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8325,7 +8387,7 @@ p-value: 0.5110883633440992
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ab6dbd19">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell celltag_toggle-input" id="cell-id=ab6dbd19">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8557,7 +8619,7 @@ with the weights being $ \frac{1}{\hat{h}_i} $. This corrects for the heterosked
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Summary">Summary<a class="anchor-link" href="#Summary">¶</a></h1><ol>
-<li>We found the <a href="#Variance-of-beta1-under-Heteroskedasticity">estimator of the slope</a>, robust to heteroskedasticity, in the simple and multiple linear regression. With this new estimator, we repeated the hypothesis testing $\beta_i \ne 0$ in a conventional way. The presence of heteroskedasticity was illustrated by the visualization of residuals against predicted dependent variable for the considered example. Breusch–Pagan test is used to reveal heteroskedasticity quantitatively.</li>
+<li>We found the <a href="#Variance-of-the-estimator-under-Heteroskedasticity">estimator of the regression coefficients</a>, robust to heteroskedasticity, in the simple and multiple linear regression. With this new estimator, we repeated the hypothesis testing $\beta_i \ne 0$ in a conventional way. The presence of heteroskedasticity was illustrated by the visualization of residuals against predicted dependent variable for the considered example. Breusch–Pagan test is used to reveal heteroskedasticity quantitatively.</li>
 <li>We introduced <a href="#Weighted-Least-Squares">Weighted Least Squares</a> estimation. Initially we consider the problem assuming a specific form in which the variance varies. Then we estimate this from based on data.</li>
 </ol>
 <hr/>
