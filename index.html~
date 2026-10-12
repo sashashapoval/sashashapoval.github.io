@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript" id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 <title>Sasha Shapoval's Homepage</title>
 <meta name="description" content="homepage, research, career">
-<meta name="keywords" content="cv, complex systems, self organized criticality, SOC">
+<meta name="keywords" content="cv, complex systems, economics, social science">
 <meta http-equiv=Content-Type content="text/html; charset=auto">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3mod.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -44,7 +44,7 @@
 	    <li>
 	      <b>Projects in Applied Microeconomics</b>
 	      focusing on Social Economics, Political Economy, and Computational Finance: By addressing heterogeneity in economic systems, I uncover their structural properties, predictability, and controllability.
-	      My analysis draws on Game Theory, General Equilibrium Theory, Big Data Analysis, and Statistical Learning.
+	      My analysis draws on Game Theory, General Equilibrium Theory, Big Data Analysis, Statistical Learning, and AI.
 	    </li>
 	    <li>
 	      <b>Interdisciplinary Research Profile:</b>
