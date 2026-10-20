@@ -104,6 +104,10 @@
       <h2 id="applied-math" class="w3-text-khaki">Applied Mathematics</h2>
 
       <ol class="enumerate1 w3-large">
+	<li class="enumerate" id="x1-3x1">
+	  <p class="noindent" >M.&#x00A0;Elaeva, E.&#x00A0;Blanter, M.&#x00A0;Shnirman, A.&#x00A0;Shapoval, Predictability of solitary decoherence events in a symmetrically equidistant chain of coupled Kuramoto oscillators,  <span class="lati-1200">Physical Review E</span>, V.&#x00A0;114, 044215, 2026,
+	  <a href="https://doi.org/10.1103/fltc-hfvt" class="url" ><span class="latt-1200">https://doi.org/10.1103/fltc-hfvt</span></a>
+	</li>
 	<li class="enumerate" id="x1-3x38">
 	  <p class="noindent" >D.&#x00A0;Sapozhnikov, A.&#x00A0;Shapoval, M.&#x00A0;Shnirman, Comparing Prediction Efficiency in the BTW and Manna Sandpiles,  <span class="lati-1200">Scientific Reports</span>, V.&#x00A0;14, 29529, 2024,
 	  <a href="https://doi.org/10.1038/s41598-024-80621-w" class="url" ><span class="latt-1200">https://doi.org/10.1038/s41598-024-80621-w</span></a>
@@ -422,7 +426,8 @@ class="lati-1200">International J. Modern Physics C</span>, V.&#x00A0;15, &#x211
       <h2 id="in-progress" class="w3-text-khaki">In progress</h2>
       <ol class="enumerate1 w3-large">
 	<li class="enumerate" id="x1-ip3">
-	  <p class="noindent">K.&#x00A0;Butaeva, S.&#x00A0;Durlauf, A.&#x00A0;Shapoval, Intergenerational Mobility in Qing Dynasty China, <span class="lati-1200">in preparation</span>.
+	  <p class="noindent">K.&#x00A0;Butaeva, S.&#x00A0;Durlauf, A.&#x00A0;Shapoval, Intergenerational Mobility in Qing Dynasty China, <span class="lati-1200">NBER</span>, No.&#x00A0;35313, 2026,
+	  <a href="https://www.nber.org/papers/w35313" class="url"><span class="latt-1200">https://www.nber.org/papers/w35313</span></a>
 	  </p>
 	</li>
 
